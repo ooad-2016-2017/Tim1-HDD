@@ -254,7 +254,7 @@ typings/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
-
+#Hanna
 # Paket dependency manager
 .paket/paket.exe
 paket-files/
