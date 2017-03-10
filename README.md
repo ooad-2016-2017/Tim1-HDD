@@ -4,7 +4,7 @@
 ### Clanovi Tima:
 
   1. Dejan Acimovic
-  2. **Damir Bojadzic**
+  2. *Damir Bojadzic*
   3. Hanna Bojadzic
   
 
