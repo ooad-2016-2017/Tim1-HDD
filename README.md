@@ -7,8 +7,8 @@
   2. Damir Bojadzic
   3. Hanna Bojadzic
   
-  
- #### To do list:
+
+#### To do list:
 - [x] Edit Readme
 - [x] Create ProjektniZadatak1
 - [x] Fill it up with notepads
