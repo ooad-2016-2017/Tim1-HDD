@@ -7,6 +7,8 @@ Clanovi Tima:
   2. Damir Bojadzic
   3. Hanna Bojadzic
 
+
+
                                               _________
                                              |=========|
                     __[]__         _          \_______/
