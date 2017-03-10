@@ -1,8 +1,8 @@
 # Tim1-HDD
 
-Èlanovi Tima:
+Clanovi Tima:
 
-  1. Dejan Aæimoviæ
-  2. Damir Bojadžiæ
-  3. Hanna Bojadžiæ
+  1. Dejan Acimovic
+  2. Damir Bojadzic
+  3. Hanna Bojadzic
 		
