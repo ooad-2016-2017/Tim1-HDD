@@ -9,8 +9,9 @@
   
 
 #### To do list:
-- [x] Edit Readme
-- [x] Create ProjektniZadatak1
-- [x] Fill it up with notepads
-- [x] ...
+- [X] Make a to do list
+- [X] Make up original project 
+- [ ] Describe project
+- [ ] Experience existential crisis 
+- [ ] ...
 - [ ] PROFIT!
