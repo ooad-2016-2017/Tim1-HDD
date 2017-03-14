@@ -10,3 +10,4 @@
 
 #### To do list:
 - [X] Nothing
+- [X] Logo
