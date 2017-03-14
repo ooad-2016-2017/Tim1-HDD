@@ -9,10 +9,4 @@
   
 
 #### To do list:
-- [X] Make a to do list
-- [X] Make up original project 
-- [ ] Describe project
-- [ ] Experience existential crisis 
-- [ ] ...
-- [ ] ...
-- [ ] PROFIT!
+- [X] Nothing
