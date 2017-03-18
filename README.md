@@ -19,7 +19,9 @@
   
   
 
-##### To do list:
+
+
+#### To do list:
 - [ ] Napisati opis teme, indentificirati i opisati procese u sistemu, navesti funkcionalnosti sistema, identificirati aktere u sistemu.
 - [ ] Na osnovu tačke 1 dizajnirati Use Case dijagram koji će pokriti sve navedeno u tački 1.
 - [ ] Napisati scenarij i tok događaja za use case navedenim u tački 2.
