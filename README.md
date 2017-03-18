@@ -1,4 +1,4 @@
-﻿# Tim1-HDD :floppy_disk:
+# Tim1-HDD :floppy_disk:
 
 
 ### Clanovi Tima:
