@@ -13,6 +13,25 @@
 
 
 #### Funkcionalnosti:
+  * Mogucnost registracije pacijenata
+  * Mogucnost registracije uposlenika
+  * Mogucnost izvjestaja o rodjenju
+  * Mogucnost izvjestaja o smrti pacijenta
+  * Mogucnost izvjestaja o pregledu
+  * Mogucnost izdavanja uputnica
+  * Mogucnost propisivanja lijekova
+  * Mogucnost izdavanja uputnica za lezanje u bolnici
+  * Mogucnost odabira doktora
+  * Mogucnost obavljanja pregleda sa uputnicom
+  * Mogucnost obavljanja pregleda bez uputnice
+  * Mogucnost obavljanja testova
+  * Mogucnost izvjestaja o obavljenim testovima
+  * Mogucnost zakazivanja pregleda
+  * Mogucnost izvjestaja o dezinfekciji
+  * Mogucnost prijave na posao
+  * Mogucnost odjave sa posla
+  * Mogucnost prijave posjete
+  * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
 
 
 #### Akteri:
