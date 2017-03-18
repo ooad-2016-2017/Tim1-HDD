@@ -1,9 +1,6 @@
-# Tim1-HDD :floppy_disk:
+# eBolnica - *"Pacijent na prvom mjestu"*
 
-## eBolnica - *"Pacijent na prvom mjestu"*
-
-
-### Clanovi Tima:
+### Tim1-HDD:
 
   1. Dejan Acimovic
   2. Damir Bojadzic
