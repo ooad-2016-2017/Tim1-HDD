@@ -32,6 +32,7 @@
   * Mogucnost odjave sa posla
   * Mogucnost prijave posjete
   * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
+  * Mogućnost podizanja lijekova uz verifikaciju i validaciju lijekova
 
 
 #### Akteri:
@@ -44,6 +45,7 @@
   * Pacijent
   * Dobavljac lijekova
   * Posjetilac
+  * Apotekar
   
   
 
