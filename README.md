@@ -1,10 +1,22 @@
 # eBolnica - *"Pacijent na prvom mjestu"*
 
-### Tim1-HDD:
+### Tim1-HDD su:
 
   1. Dejan Acimovic
   2. Damir Bojadzic
   3. Hanna Bojadzic
+  
+#### Opis teme:
+
+
+#### Procesi:
+
+
+#### Funkcionalnosti:
+
+
+#### Akteri:
+  
   
 
 #### To do list:
