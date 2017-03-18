@@ -17,14 +17,14 @@
 
 #### Akteri:
 
-  1. Menadzer
-  2. Uposlenik
-  3. Higijenski radnik
-  4. Medicinska sestra
-  5. Doktor
-  6. Pacijent
-  7. Dobavljac lijekova
-  8. Posjetilac
+  * Menadzer
+  * Uposlenik
+  * Higijenski radnik
+  * Medicinska sestra
+  * Doktor
+  * Pacijent
+  * Dobavljac lijekova
+  * Posjetilac
   
   
 
