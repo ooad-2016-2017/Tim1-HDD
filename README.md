@@ -1,4 +1,4 @@
-# Tim1-HDD :floppy_disk:
+﻿# Tim1-HDD :floppy_disk:
 
 
 ### Clanovi Tima:
@@ -12,7 +12,7 @@
 - [] Napisati opis teme, indentificirati i opisati procese u sistemu, navesti funkcionalnosti sistema, identificirati aktere u sistemu.
 - [] Na osnovu tačke 1 dizajnirati Use Case dijagram koji će pokriti sve navedeno u tački 1.
 - [] Napisati scenarij i tok događaja za use case navedenim u tački 2.
-- [] Kreirati blank windows universal projekat i uraditi commit na github
+- [X] Kreirati blank windows universal projekat i uraditi commit na github
 - [] Kreirati prototip koristeći neki od alata za skiciranje prototipa aplikacije
 - [] ...
 - [] PROFIT!
