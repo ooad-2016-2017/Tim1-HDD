@@ -16,10 +16,17 @@
 
 
 #### Akteri:
+
+  1. Menadzer
+  2. Uposlenik
+  3. Higijenski radnik
+  4. Medicinska sestra
+  5. Doktor
+  6. Pacijent
+  7. Dobavljac lijekova
+  8. Posjetilac
   
   
-
-
 
 #### To do list:
 - [ ] Napisati opis teme, indentificirati i opisati procese u sistemu, navesti funkcionalnosti sistema, identificirati aktere u sistemu.
