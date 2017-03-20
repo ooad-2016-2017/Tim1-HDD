@@ -28,10 +28,8 @@ eBolnica je aplikacija čiji primarni zadatak je upravljati, olakšati i rastete
   * Mogucnost obavljanja testova
   * Mogucnost izvjestaja o obavljenim testovima
   * Mogucnost zakazivanja pregleda
-  * Mogucnost izvjestaja o dezinfekciji
   * Mogucnost prijave na posao
   * Mogucnost odjave sa posla
-  * Mogucnost prijave posjete
   * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
   * Mogućnost podizanja lijekova uz verifikaciju i validaciju lijekova
 
@@ -40,12 +38,10 @@ eBolnica je aplikacija čiji primarni zadatak je upravljati, olakšati i rastete
 
   * Menadzer
   * Uposlenik
-  * Higijenski radnik
   * Medicinska sestra
   * Doktor
   * Pacijent
   * Dobavljac lijekova
-  * Posjetilac
   * Apotekar
   
   
