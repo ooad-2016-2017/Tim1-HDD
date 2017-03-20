@@ -36,13 +36,13 @@ eBolnica je aplikacija čiji primarni zadatak je upravljati, olakšati i rastete
 
 #### Akteri:
 
-  * Menadzer
-  * Uposlenik
-  * Medicinska sestra
-  * Doktor
-  * Pacijent
-  * Dobavljac lijekova
-  * Apotekar
+  * Menadzer - registruje uposlenike
+  * Uposlenik - vrsi prijavu i odjavu sa posla
+  * Medicinska sestra - registruje pacijente
+  * Doktor - obavlja pregled sa pacijentom, daje izvjestaj o rodjenju i smrti pacijenata, te daje izvjestaj pregleda sto ukljucuje      propisivanje lijekova, izdavanje uputnice za dalje testove i izdavanje uputnice za lezanje u bolnici
+  * Pacijent - posjecuje bolnicu gdje moze obaviti pregled sa ili bez uputnice, odabrati doktora ili se prijaviti za lezanje, pacijent takodjer zakazuje svoje preglede, podize lijekove, te posjecuje laboratoriju gdje obavlja testove i dobija njihove rezeultate
+  * Dobavljac lijekova - registruje dostavljenu robu
+  * Apotekar - izdaje lijekove
   
   
 
