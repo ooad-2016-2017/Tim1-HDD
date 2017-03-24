@@ -54,6 +54,7 @@ eBolnica je aplikacija čiji primarni zadatak je upravljati, olakšati i rastete
   * Pacijent - posjecuje bolnicu gdje moze obaviti pregled sa ili bez uputnice, odabrati doktora ili se prijaviti za lezanje, pacijent takodjer zakazuje svoje preglede, podize lijekove, te posjecuje laboratoriju gdje obavlja testove i dobija njihove rezeultate
   * Dobavljac lijekova - registruje dostavljenu robu
   * Apotekar - izdaje lijekove
+  * Admin - ima pristup i privilegiju promjene svih podataka o pacijentima i uposlenicima
   
   
 
