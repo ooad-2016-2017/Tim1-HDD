@@ -65,7 +65,7 @@
 - [X] Kreirati blank windows universal projekat i uraditi commit na github
 - [X] Kreirati prototip koristeći neki od alata za skiciranje prototipa aplikacije
 - [ ] ...
-- [ ] Kreirati folder DijagramiAktivnosti
+- [X] Kreirati folder DijagramiAktivnosti
 - [ ] Postaviti project file, xml export i jpg export
 - [ ] ...
 - [ ] PROFIT!
