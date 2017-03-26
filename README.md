@@ -2,9 +2,9 @@
 
 ### Tim1-HDD su:
 
-  1. Dejan Acimovic
-  2. Damir Bojadzic
-  3. Hanna Bojadzic
+  1. Dejan Aćimović
+  2. Damir Bojadžić
+  3. Hanna Bojadžić
   
 #### Opis teme:
 
