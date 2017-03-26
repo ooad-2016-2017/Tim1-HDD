@@ -26,22 +26,22 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   
 
 #### Funkcionalnosti:
-  * Mogucnost registracije pacijenata 
-  * Mogucnost registracije uposlenika
-  * Mogucnost izvjestaja o rodjenju
-  * Mogucnost izvjestaja o smrti pacijenta
-  * Mogucnost izvjestaja o pregledu
-  * Mogucnost izdavanja uputnica
-  * Mogucnost propisivanja lijekova
-  * Mogucnost izdavanja uputnica za lezanje u bolnici
-  * Mogucnost odabira doktora
-  * Mogucnost obavljanja pregleda sa uputnicom
-  * Mogucnost obavljanja pregleda bez uputnice
-  * Mogucnost obavljanja testova
-  * Mogucnost izvjestaja o obavljenim testovima
-  * Mogucnost zakazivanja pregleda
-  * Mogucnost prijave na posao
-  * Mogucnost odjave sa posla
+  * Mogućnost registracije pacijenata 
+  * Mogućnost registracije uposlenika
+  * Mogućnost izvještaja o rođenju
+  * Mogućnost izvještaja o smrti pacijenta
+  * Mogućnost izvještaja o pregledu
+  * Mogućnost izdavanja uputnica
+  * Mogućnost propisivanja lijekova
+  * Mogućnost izdavanja uputnica za ležanje u bolnici
+  * Mogućnost odabira doktora
+  * Mogućnost obavljanja pregleda sa uputnicom
+  * Mogućnost obavljanja pregleda bez uputnice
+  * Mogućnost obavljanja testova
+  * Mogućnost izvještaja o obavljenim testovima
+  * Mogućnost zakazivanja pregleda
+  * Mogućnost prijave na posao
+  * Mogućnost odjave sa posla
   * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
   * Mogućnost podizanja lijekova uz verifikaciju i validaciju lijekova
   * Mogućnost dobavljača za direktan pristup listi potrebnih lijekova/materijala za nabavku
@@ -49,12 +49,12 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
 
 #### Akteri:
 
-  * **Menadzer** - registruje uposlenike
-  * **Uposlenik** - vrsi prijavu i odjavu sa posla
+  * **Menadžer** - registruje uposlenike
+  * **Uposlenik** - vrši prijavu i odjavu sa posla
   * **Medicinska sestra** - registruje pacijente, vrši laboratorijske pretrage
-  * **Doktor** - obavlja pregled sa pacijentom, daje izvjestaj o rodjenju i smrti pacijenata, te daje izvjestaj pregleda sto ukljucuje      propisivanje lijekova, izdavanje uputnice za dalje testove i izdavanje uputnice za lezanje u bolnici
-  * **Pacijent** - posjecuje bolnicu gdje moze obaviti pregled sa ili bez uputnice, odabrati doktora ili se prijaviti za lezanje, pacijent takodjer zakazuje svoje preglede, podize lijekove, te posjecuje laboratoriju gdje obavlja testove i dobija njihove rezeultate
-  * **Dobavljac lijekova** - registruje dostavljenu robu. Pristupa listi potrebnih materijala za bolnicu.
+  * **Doktor** - obavlja pregled sa pacijentom, daje izvještaj o rođenju i smrti pacijenata, te daje izvještaj pregleda što uključuje      propisivanje lijekova, izdavanje uputnice za dalje testove i izdavanje uputnice za ležanje u bolnici
+  * **Pacijent** - posjećuje bolnicu gdje moze obaviti pregled sa ili bez uputnice, odabrati doktora ili se prijaviti za ležanje, pacijent također zakazuje svoje preglede, podiže lijekove, te posjećuje laboratoriju gdje obavlja testove i dobija njihove rezultate
+  * **Dobavljač lijekova** - registruje dostavljenu robu. Pristupa listi potrebnih materijala za bolnicu.
   * **Apotekar** - izdaje lijekove
   * **Admin** - ima pristup i privilegiju promjene svih podataka o pacijentima i uposlenicima
   
