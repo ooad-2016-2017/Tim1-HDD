@@ -286,5 +286,3 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
-#Uklanjanja .bak fajlova iz use case dijagrama
-*.bak*
