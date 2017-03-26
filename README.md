@@ -43,16 +43,17 @@
   * Mogucnost odjave sa posla
   * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
   * Mogućnost podizanja lijekova uz verifikaciju i validaciju lijekova
+  * Mogćnnost dobavljača za direktan pristup listi potrebnih lijekova/materijala za nabavku
 
 
 #### Akteri:
 
   * **Menadzer** - registruje uposlenike
   * **Uposlenik** - vrsi prijavu i odjavu sa posla
-  * **Medicinska sestra** - registruje pacijente
+  * **Medicinska sestra** - registruje pacijente, vrši laboratorijske pretrage
   * **Doktor** - obavlja pregled sa pacijentom, daje izvjestaj o rodjenju i smrti pacijenata, te daje izvjestaj pregleda sto ukljucuje      propisivanje lijekova, izdavanje uputnice za dalje testove i izdavanje uputnice za lezanje u bolnici
   * **Pacijent** - posjecuje bolnicu gdje moze obaviti pregled sa ili bez uputnice, odabrati doktora ili se prijaviti za lezanje, pacijent takodjer zakazuje svoje preglede, podize lijekove, te posjecuje laboratoriju gdje obavlja testove i dobija njihove rezeultate
-  * **Dobavljac lijekova** - registruje dostavljenu robu
+  * **Dobavljac lijekova** - registruje dostavljenu robu. Pristupa listi potrebnih materijala za bolnicu.
   * **Apotekar** - izdaje lijekove
   * **Admin** - ima pristup i privilegiju promjene svih podataka o pacijentima i uposlenicima
   
