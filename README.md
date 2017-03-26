@@ -25,7 +25,7 @@
   
 
 #### Funkcionalnosti:
-  * Mogucnost registracije pacijenata
+  * Mogucnost registracije pacijenata 
   * Mogucnost registracije uposlenika
   * Mogucnost izvjestaja o rodjenju
   * Mogucnost izvjestaja o smrti pacijenta
