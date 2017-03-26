@@ -44,7 +44,7 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   * Mogucnost odjave sa posla
   * Mogućnost identifikacije pacijenta na osnovu jedinstvenog koda
   * Mogućnost podizanja lijekova uz verifikaciju i validaciju lijekova
-  * Mogćnnost dobavljača za direktan pristup listi potrebnih lijekova/materijala za nabavku
+  * Mogućnost dobavljača za direktan pristup listi potrebnih lijekova/materijala za nabavku
 
 
 #### Akteri:
