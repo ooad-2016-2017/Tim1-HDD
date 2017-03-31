@@ -1,4 +1,4 @@
-# eBolnica™ - *"Pacijent na prvom mjestu"*
+﻿# eBolnica™ - *"Pacijent na prvom mjestu"*
 
 ### Tim1-HDD su:
 
@@ -61,7 +61,7 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   
 
 #### To do list:
-- [ ] Kreirati folder DijagramiAktivnosti
-- [ ] Postaviti project file, xml export i jpg export
-- [ ] ...
+- [X] Kreirati folder DijagramiAktivnosti
+- [X] Postaviti project file, xml export i jpg export
+- [X] ...
 - [ ] PROFIT!
