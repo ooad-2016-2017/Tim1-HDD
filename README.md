@@ -17,9 +17,7 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   
   * **Registracija doktora** - Svaki doktor prilikom registracije dobija svoj timetable gdje vidi naručene pacijente za taj dan te privilegije modifikovanja profila svojih pacijenata koji su na pregledu.
 
-  * **Raspoređivanje I** - Pacijent može da zahtijeva termin za pregled kod doktora. Sistem pacijentu određuje vrijeme kada će da dođe ovisno o trenutnom prometu. Ovo se može zamisliti kao virtuelna kartoteka čime će se izbjeći i regulisati ogromne gužve u bolnicama. Doktor koji je u smjeni ima pristup svoj rasporedu gdje mu sistem prikazuje pacijente koji su u redu čekanja.
-
-  * **Raspoređivanje II** - Doktor vrši pregled i šalje pacijenta na pretrage. Ovisno o vrsti pretraga i potrebama pacijenta, sistem rezerviše prostor u rasporedu za pacijenta vodeći računa o tome da se dva termina ne preklope. Prilikom slanja pacijenta na pretrage doktor može da utiče na prioritet pretraga, a sistem ovisno o prioritetu treba da kreira prostor za pacijenta.
+  * **Raspoređivanje** - Pacijent može da zahtijeva termin za pregled kod doktora. Sistem pacijentu određuje vrijeme kada će da dođe ovisno o trenutnom prometu. Ovo se može zamisliti kao virtuelna kartoteka čime će se izbjeći i regulisati ogromne gužve u bolnicama. Doktor koji je u smjeni ima pristup svoj rasporedu gdje mu sistem prikazuje pacijente koji su u redu čekanja. Pored ovog raspoređivanja sistem vrši raspoređivanje i u slučaju kada doktor vrši pregled i šalje pacijenta na pretrage. Ovisno o vrsti pretraga i potrebama pacijenta, sistem rezerviše prostor u rasporedu za pacijenta vodeći računa o tome da se dva termina ne preklope. Prilikom slanja pacijenta na pretrage doktor može da utiče na prioritet pretraga, a sistem ovisno o prioritetu treba da kreira prostor za pacijenta.
   
   * **Terapije** - Ukoliko doktor pacijentu uključi neku terapiju i propiše lijekove, stanje pacijenta će se automatski ažuritati, te će u apoteci moći da podigne lijekove bez problema. Apotekar će imati pristup profilu pacijenta, ali samo toliko da označi da su lijekovi podignuti, čime se šalje izvještaj osiguravajućoj kući. Aplikacija će imati mogućnost slanja notifikacije pacijentu da je vrijeme uzimanja lijekova po propisu doktora.
   
@@ -64,7 +62,7 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
 - [X] Kreirati folder DijagramiAktivnosti
 - [X] Postaviti project file, xml export i jpg export
 - [X] ...
-- [ ] Kreirati folder DijagramKlasa
+- [X] Kreirati folder DijagramKlasa
 - [ ] Kreirati dijagram klasa za projekat
 - [ ] ...
 - [ ] PROFIT!
