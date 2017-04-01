@@ -9,6 +9,11 @@
 *.userosscache
 *.sln.docstates
 *bak*
+*.lck
+*.zip
+*APLab*
+*vux*
+*.*~
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
