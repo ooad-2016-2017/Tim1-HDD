@@ -59,9 +59,6 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   
 
 #### To do list:
-- [X] Kreirati folder DijagramiAktivnosti
-- [X] Postaviti project file, xml export i jpg export
-- [X] ...
 - [X] Kreirati folder DijagramKlasa
 - [ ] Kreirati dijagram klasa za projekat
 - [ ] ...
