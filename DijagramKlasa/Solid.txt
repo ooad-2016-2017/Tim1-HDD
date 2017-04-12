@@ -1,0 +1,27 @@
+Treba imati u vidu da autori dijagrama klasa, u vrijeme pisanja dijagrama klasa,
+nisu bili upuæeni u odlike dobrog dizajna klasa.
+
+1.Princip pojedinaène odgovornosti 
+	-U ovom odjeljku æemo ignorisati getere i setere kao metode unutar klasa.
+	 Princip pojedninaène odgovornosti nije ispoštovan do maksimuma. To se najviše primjeti kod 
+	 klase "Administrator" gdje klasa obavlja mnoge poslove, te promjena u bilo kojoj klasi na koju
+	 klsa "Administrator" pristupa, dovodi i do promejene u klasi "Administrator". Ipak u apstraktnim
+	 klasama i iz kojih se nasljedjuje, dobro se drže ovog principa jer sadrže samo atribute koje izvedene
+	 klase moraju imati, na taj naèin su dovoljno generalne da se ne vidi potreba za njihovim izmjenama. (fali metoda pa ne mogu pisati)
+	 
+2.Otvoreno zatvoren princip 
+	-Ovaj princip je generalno ispoštovan u dijagramu klasa. Veæina klasa upravo onomeguæava da promjena u drugoj klasi pravi promjenu u njoj samoj.
+	 Dobra implementacija ovog principa vidi se kod klasa "Dobavljaè"  i "PotrebniLijekovi" ili "PotrebniLijekovi" i "Lijekovi". Meðutim postoji par mjesta na kojima ovaj princip nije ispoštovan.
+	 Npr. klasa "Administrator" koja bi trebala predstavljati nekog "Super usera" problematièna je u mnogim aspektima, s obzirom da ima interakciju sa kompletnim sistemom.
+	 Metode ove klase bi trebale biti implementirane u samim klasama koje klasa "Administrator" mijenja. Osim toga generalno je princip ispoštovan.
+3. Liskov princip zamjene 
+	-Linskom princip je u potpunosti ispunjen u dijagramu klasa za bolnicu. Primjetimo da su iz klase "Osoba" izvedene "Uposlenik" , "Dobavljaè" , "Apotekar", "Administrator", "Pacijent".
+	 "Dobavljaè" i "Apotekar" nisu izvedeni iz klase "Uposlenik" jer nisu direktni uposlenici bolnice, veæ samo saradnici u radu bolnice. Na razliku od njih
+	 klase "Menadžer"  , "Medicinska sestra", "Doktor" svi mogu biti zamjenjeni sa klasom "Uposlenik" èime je Liskov princip ispoštovan.
+4.Princip inverzije ovisnosti 
+	-A. Više nego oèito sve klase koje se nesljaðuju ne ovise od izvedenih klasa ni u kom pogledu. To možemo primjetiti u klasama "Osoba"  i "Uposlenik" zajedno sa njihovim izvedenim klasama.
+	-B.
+5.Princip izoliranja interfejsa
+	-I ovaj princip je ispoštovan. Prilikom dizajniranja klasa vodilo se raèuna da one funkcionalnosti koje su navedene u use case dijagramu 
+	 budu i ispoštovane. Poštivanje ovog principa je najviše zavisilo od dobro dizajniranog use case dijagrama, sve metode su takve da ce ih korisnik 
+	 upotrebljavati. Naravno, neke metode æe biti èešæe korištene od drugih, ali uklanjanjem bilo koje metode èitav sistem gubi bitne funkcionalnosti.
