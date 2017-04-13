@@ -19,8 +19,9 @@ nisu bili upuæeni u odlike dobrog dizajna klasa.
 	 "Dobavljaè" i "Apotekar" nisu izvedeni iz klase "Uposlenik" jer nisu direktni uposlenici bolnice, veæ samo saradnici u radu bolnice. Na razliku od njih
 	 klase "Menadžer"  , "Medicinska sestra", "Doktor" svi mogu biti zamjenjeni sa klasom "Uposlenik" èime je Liskov princip ispoštovan.
 4.Princip inverzije ovisnosti 
-	-A. Više nego oèito sve klase koje se nesljaðuju ne ovise od izvedenih klasa ni u kom pogledu. To možemo primjetiti u klasama "Osoba"  i "Uposlenik" zajedno sa njihovim izvedenim klasama.
-	-B.
+	-A. Više nego oèito sve klase koje se nesljaðuju ne ovise od izvedenih klasa ni u kom pogledu. Praæenjem svih strelica možemo uoèiti da im je konaèni cilj apstraktna klasa, konkretno u sluèaju klase "Osoba" je to klasa "Uposlenik"
+	èime vidimo da princip inverzne ovisnosti nije narušen.
+	-B. Moduli su neovisni od detalja sistema. Apstrakcijom klase "Uposlenik" smo riješili sve detalje koji bi se inaèe duplicirali u izvedenim klasama te su time moduli ostali neovisni od detalja i princip nije narušem.
 5.Princip izoliranja interfejsa
 	-I ovaj princip je ispoštovan. Prilikom dizajniranja klasa vodilo se raèuna da one funkcionalnosti koje su navedene u use case dijagramu 
 	 budu i ispoštovane. Poštivanje ovog principa je najviše zavisilo od dobro dizajniranog use case dijagrama, sve metode su takve da ce ih korisnik 
