@@ -1,28 +1,31 @@
 Treba imati u vidu da autori dijagrama klasa, u vrijeme pisanja dijagrama klasa,
-nisu bili upuæeni u odlike dobrog dizajna klasa.
+nisu bili upuÄ‡eni u odlike dobrog dizajna klasa.
 
-1.Princip pojedinaène odgovornosti 
-	-U ovom odjeljku æemo ignorisati getere i setere kao metode unutar klasa.
-	 Princip pojedninaène odgovornosti nije ispoštovan do maksimuma. To se najviše primjeti kod 
-	 klase "Administrator" gdje klasa obavlja mnoge poslove, te promjena u bilo kojoj klasi na koju
-	 klsa "Administrator" pristupa, dovodi i do promejene u klasi "Administrator". Ipak u apstraktnim
-	 klasama i iz kojih se nasljedjuje, dobro se dre ovog principa jer sadre samo atribute koje izvedene
-	 klase moraju imati, na taj naèin su dovoljno generalne da se ne vidi potreba za njihovim izmjenama. (fali metoda pa ne mogu pisati)
+1.Princip pojedinaÄne odgovornosti 
+	-U ovom odjeljku Ä‡emo ignorisati getere i setere kao metode unutar klasa.
+	 Princip pojedninaÄne odgovornosti nije ispoÅ¡tovan do maksimuma. To se najviÅ¡e primjeti kod 
+	 klase "Administrator" gdje klasa obavlja mnoge poslove, te promjena u bilo kojoj klasi kojoj
+	 klsa "Administrator" pristupa, dovodi i do promjene u klasi "Administrator". Ipak u apstraktnim
+	 klasama i iz kojih se nasljeÄ‘uje, dobro se drÅ¾e ovog principa jer sadrÅ¾e samo atribute koje izvedene
+	 klase moraju imati, na taj naÄin su dovoljno generalne da se ne vidi potreba za njihovim izmjenama. 	 
 	 
 2.Otvoreno zatvoren princip 
-	-Ovaj princip je generalno ispoštovan u dijagramu klasa. Veæina klasa upravo onomeguæava da promjena u drugoj klasi pravi promjenu u njoj samoj.
-	 Dobra implementacija ovog principa vidi se kod klasa "Dobavljaè"  i "PotrebniLijekovi" ili "PotrebniLijekovi" i "Lijekovi". Meğutim postoji par mjesta na kojima ovaj princip nije ispoštovan.
-	 Npr. klasa "Administrator" koja bi trebala predstavljati nekog "Super usera" problematièna je u mnogim aspektima, s obzirom da ima interakciju sa kompletnim sistemom.
-	 Metode ove klase bi trebale biti implementirane u samim klasama koje klasa "Administrator" mijenja. Osim toga generalno je princip ispoštovan.
+	-Ovaj princip je generalno ispoÅ¡tovan u dijagramu klasa. VeÄ‡ina klasa upravo onemoguÄ‡ava da promjena u drugoj klasi pravi promjenu u njoj samoj.
+	 Dobra implementacija ovog principa vidi se kod klasa "DobavljaÄ"  i "PotrebniLijekovi" ili "PotrebniLijekovi" i "Lijekovi". MeÄ‘utim postoji par mjesta na kojima ovaj princip nije ispoÅ¡tovan.
+	 Npr. klasa "Administrator" koja bi trebala predstavljati nekog "Super usera" problematiÄna je u mnogim aspektima, s obzirom da ima interakciju sa kompletnim sistemom.
+	 Metode ove klase bi trebale biti implementirane u samim klasama koje klasa "Administrator" mijenja. Osim toga generalno je princip ispoÅ¡tovan.
+	 
 3. Liskov princip zamjene 
-	-Linskom princip je u potpunosti ispunjen u dijagramu klasa za bolnicu. Primjetimo da su iz klase "Osoba" izvedene "Uposlenik" , "Dobavljaè" , "Apotekar", "Administrator", "Pacijent".
-	 "Dobavljaè" i "Apotekar" nisu izvedeni iz klase "Uposlenik" jer nisu direktni uposlenici bolnice, veæ samo saradnici u radu bolnice. Na razliku od njih
-	 klase "Menader"  , "Medicinska sestra", "Doktor" svi mogu biti zamjenjeni sa klasom "Uposlenik" èime je Liskov princip ispoštovan.
+	-Liskov princip je u potpunosti ispunjen u dijagramu klasa za bolnicu. Primjetimo da su iz klase "Osoba" izvedene "Uposlenik" , "DobavljaÄ" , "Apotekar", "Administrator", "Pacijent".
+	 "DobavljaÄ" i "Apotekar" nisu izvedeni iz klase "Uposlenik" jer nisu direktni uposlenici bolnice, veÄ‡ samo saradnici u radu bolnice. Za razliku od njih
+	 klase "MenadÅ¾er"  , "Medicinska sestra", "Doktor", sve mogu biti zamjenjeni sa klasom "Uposlenik" Äime je Liskov princip ispoÅ¡tovan.
+	 
 4.Princip inverzije ovisnosti 
-	-A. Više nego oèito sve klase koje se nesljağuju ne ovise od izvedenih klasa ni u kom pogledu. Praæenjem svih strelica moemo uoèiti da im je konaèni cilj apstraktna klasa, konkretno u sluèaju klase "Osoba" je to klasa "Uposlenik"
-	èime vidimo da princip inverzne ovisnosti nije narušen.
-	-B. Moduli su neovisni od detalja sistema. Apstrakcijom klase "Uposlenik" smo riješili sve detalje koji bi se inaèe duplicirali u izvedenim klasama te su time moduli ostali neovisni od detalja i princip nije narušem.
+	-A. ViÅ¡e nego oÄito sve klase koje se nasljeÄ‘uju ne ovise od izvedenih klasa ni u kom pogledu. PraÄ‡enjem svih strelica moÅ¾emo uoÄiti da im je konaÄni cilj apstraktna klasa, konkretno u sluÄaju klase "Osoba" je to klasa "Uposlenik"
+	Äime vidimo da princip inverzne ovisnosti nije naruÅ¡en.
+	-B. Moduli su neovisni od detalja sistema. Apstrakcijom klase "Uposlenik" smo rijeÅ¡ili sve detalje koji bi se inaÄe duplicirali u izvedenim klasama te su time moduli ostali neovisni od detalja i princip nije naruÅ¡en.
+	
 5.Princip izoliranja interfejsa
-	-I ovaj princip je ispoštovan. Prilikom dizajniranja klasa vodilo se raèuna da one funkcionalnosti koje su navedene u use case dijagramu 
-	 budu i ispoštovane. Poštivanje ovog principa je najviše zavisilo od dobro dizajniranog use case dijagrama, sve metode su takve da ce ih korisnik 
-	 upotrebljavati. Naravno, neke metode æe biti èešæe korištene od drugih, ali uklanjanjem bilo koje metode èitav sistem gubi bitne funkcionalnosti.
+	-I ovaj princip je ispoÅ¡tovan. Prilikom dizajniranja klasa vodilo se raÄuna da one funkcionalnosti koje su navedene u use case dijagramu 
+	 budu i ispoÅ¡tovane. PoÅ¡tivanje ovog principa je najviÅ¡e zavisilo od dobro dizajniranog use case dijagrama, sve metode su takve da ce ih korisnik 
+	 upotrebljavati. Naravno, neke metode Ä‡e biti ÄeÅ¡Ä‡e koriÅ¡tene od drugih, ali uklanjanjem bilo koje metode Äitav sistem gubi bitne funkcionalnosti.
