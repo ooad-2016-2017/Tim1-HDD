@@ -59,6 +59,6 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   
 
 #### To do list:
-- [ ] Projektni zadatak 5
+- [X] Projektni zadatak 5
 - [ ] ...
 - [ ] PROFIT!
