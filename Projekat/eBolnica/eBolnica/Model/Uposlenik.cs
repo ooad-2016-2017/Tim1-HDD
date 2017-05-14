@@ -17,7 +17,14 @@ namespace eBolnica.Model {
             id = brojac;
         }
 
-        public int Id { get => id; set => id = value; }
-        public double Plata { get => plata; set => plata = value; }
-    }
+        /* public int Id { get => id; set => id = value; }
+         public double Plata { get => plata; set => plata = value; }*/
+        public int Id
+        {
+            get; set; }
+        public double Plata
+        {
+            get; set; }
+
+        }
 }

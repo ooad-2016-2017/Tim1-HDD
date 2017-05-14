@@ -9,10 +9,23 @@ namespace eBolnica.Model {
         private string naziv;
         private List<Uposlenik> uposlenici = new List<Uposlenik>();
         private List<Pacijent> redCekanja = new List<Pacijent>();
-        
-        public string Naziv { get => naziv; set => naziv = value; }
+
+        /*public string Naziv { get => naziv; set => naziv = value; }
         public List<Uposlenik> Uposlenici { get => uposlenici; }
-        public List<Pacijent> Pacijenti { get => redCekanja; }
+        public List<Pacijent> Pacijenti { get => redCekanja; }*/
+       
+            public string Naziv
+        {
+            get; set;
+        }
+        public List<Uposlenik> Uposlenici
+        {
+            get; set;
+        }
+        public List<Pacijent> Pacijenti
+        {
+            get; set;
+        }
 
         public Odjel(string naziv) {
             this.Naziv = naziv;

@@ -16,8 +16,18 @@ namespace eBolnica.Model {
             this.izvjestaj = izvjestaj;
         }
 
-        public DateTime DatumPregleda { get => datumPregleda; set => datumPregleda = value; }
+        /*public DateTime DatumPregleda { get => datumPregleda; set => datumPregleda = value; }
         public int IdDoktora { get => idDoktora; set => idDoktora = value; }
-        public IzvjestajPregleda Izvjestaj { get => izvjestaj; set => izvjestaj = value; }
-    }
+        public IzvjestajPregleda Izvjestaj { get => izvjestaj; set => izvjestaj = value; }*/
+
+        public DateTime DatumPregleda
+        {
+            get; set; }
+        public int IdDoktora
+        {
+            get; set; }
+        public IzvjestajPregleda Izvjestaj
+        {
+            get; set; }
+        }
 }

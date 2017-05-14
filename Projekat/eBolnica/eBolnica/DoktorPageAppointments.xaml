@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="eBolnica.DoktorPageAppointments"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eBolnica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="0,0,0,0"   BorderThickness="2" >
+            <TextBlock FontSize="20" Text="Timetable" Margin="9,9,0,9"/>
+            <ScrollViewer Height="150" BorderBrush="Black" BorderThickness="2">
+                <Grid Height="150" >
+                    <ListView MinHeight="100"
+          ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <ItemsWrapGrid/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                        <x:String>Item 3</x:String>
+                        <x:String>Item 4</x:String>
+                        <x:String>Item 5</x:String>
+                    </ListView>
+                </Grid>
+            </ScrollViewer>
+            <StackPanel BorderThickness="2" VerticalAlignment="Bottom"  >
+                <TextBlock Text="Informations" FontSize="20" Margin="9,9,0,9"/>
+                <ScrollViewer>
+                    <TextBox Name="textBoxDoktorInfo" Margin="5,5,5,5" MinHeight="200" />
+                </ScrollViewer>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

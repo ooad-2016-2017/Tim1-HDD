@@ -19,10 +19,21 @@ namespace eBolnica.Model {
             id = brojac;
         }
 
-        public List<Pregled> Pregledi { get => pregledi; }
+        /*public List<Pregled> Pregledi { get => pregledi; }
         public List<Lijek> Terapije { get => terapija; set => terapija = value; }
-        public List<LaboratorijskaAnaliza> Nalazi { get => nalazi; }
-        
+        public List<LaboratorijskaAnaliza> Nalazi { get => nalazi; }*/
+
+        public List<Pregled> Pregledi
+        {
+            get; }
+        public List<Lijek> Terapije
+        {
+            get; set; }
+        public List<LaboratorijskaAnaliza> Nalazi
+        {
+            get; }
+
+
         public void DodajPregled(Pregled pregled) {
             pregledi.Add(pregled);
         }
@@ -38,6 +49,11 @@ namespace eBolnica.Model {
         public void DodajAnalizu(LaboratorijskaAnaliza analiza) {
             nalazi.Add(analiza);
         }
-        public bool Prioritet { get => prioritet; set => prioritet = value; }
-    }
+        //public bool Prioritet { get => prioritet; set => prioritet = value; }
+        public bool Prioritet
+        {
+            get;
+            set;
+        }
+        }
 }

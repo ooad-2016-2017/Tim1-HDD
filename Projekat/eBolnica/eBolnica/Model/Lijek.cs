@@ -22,10 +22,28 @@ namespace eBolnica.Model {
             brojac++;
             this.id = brojac;
         }
-        public int Id { get => id; set => id = value; }
-        public string Naziv { get => naziv; set => naziv = value; }
-        public double Cijena { get => cijena; set => cijena = value; }
-        public int Kolicina { get => kolicina; set => kolicina = value; }
-        public bool Dostupnost { get => dostupnost; set => dostupnost = value; }
-    }
+        /* public int Id { get => id; set => id = value; }
+         public string Naziv { get => naziv; set => naziv = value; }
+         public double Cijena { get => cijena; set => cijena = value; }
+         public int Kolicina { get => kolicina; set => kolicina = value; }
+         public bool Dostupnost { get => dostupnost; set => dostupnost = value; }*/
+        public int Id
+        {
+            get; set; }
+        public string Naziv
+        {
+            get; set;
+        }
+        public double Cijena
+        {
+            get; set;
+        }
+        public int Kolicina
+        {
+            get; set;
+        }
+        public bool Dostupnost
+        {
+            get; set; }
+        }
 }

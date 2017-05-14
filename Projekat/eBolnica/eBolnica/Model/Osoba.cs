@@ -26,15 +26,39 @@ namespace eBolnica.Model {
             this.email = email;
         }
 
-        public string Ime { get => ime; set => ime = value; }
-        public string Prezime { get => prezime; set => prezime = value; }
+        /* public string Ime { get => ime; set => ime = value; }
+         public string Prezime { get => prezime; set => prezime = value; }*/
+        public string Ime
+        {
+            get;
+            set;
+        }
+        public string Prezime
+        {
+            get; set;
+        }
         public DateTime DatumRodjenja {
-            get => datumRodjenja;
+            get { return datumRodjenja; }
             set { if (value > DateTime.Now) throw new ArgumentException("Pogresan Datum Rodjenja"); datumRodjenja = value; }
         }
-        public string Jmbg { get => jmbg; set => jmbg = value; }
+       /* public string Jmbg { get => jmbg; set => jmbg = value; }
         public string AdresaStanovanja { get => adresaStanovanja; set => adresaStanovanja = value; }
         public string BrojTelefona { get => brojTelefona; set => brojTelefona = value; }
-        public string Email { get => email; set => email = value; }
-    }
+        public string Email { get => email; set => email = value; }*/
+         public string Jmbg
+        {
+            get; set; }
+        public string AdresaStanovanja
+        {
+            get; set;
+        }
+        public string BrojTelefona
+        {
+            get; set;
+        }
+        public string Email
+        {
+            get; set;
+        }
+        }
 }

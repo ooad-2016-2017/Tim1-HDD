@@ -14,8 +14,10 @@ namespace eBolnica.Model {
             brojac++;
             id = brojac;
         }
-        public int Id { get => id; set => id = value; }
-
-        //dodati metode
-    }
+        //public int Id { get => id; set => id = value; }
+        public int Id
+        {
+            get; set; }
+            //dodati metode
+        }
 }

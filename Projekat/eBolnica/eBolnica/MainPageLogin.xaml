@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="eBolnica.MainPagePage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eBolnica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+
+            <StackPanel Margin="0,0,0,0" Height="200" Width="400" HorizontalAlignment="Left">
+                <TextBox Name="textBoxUsername" Header="Username:" Margin="9,9,9,9"/>
+                <TextBox Name="textBoxPassword" Header="Password:" Margin="9,9,9,9"/>
+                <Button Name="submitButton" Content="Submit" Margin="9,9,9,9"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,0"  >
+                <FlipView x:Name="flipView1"  Height="500" >
+                    <Image Source="Assets/slika1.png" />
+                    <Image Source="Assets/slika2.png" />
+                    <Image Source="Assets/slika3.jpg" />
+                </FlipView>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

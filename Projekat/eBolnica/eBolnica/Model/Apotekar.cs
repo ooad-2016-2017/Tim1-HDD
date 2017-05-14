@@ -14,6 +14,9 @@ namespace eBolnica.Model {
             brojac++;
             this.id = brojac;
         }
-        public static int Brojac { get => brojac; set => brojac = value; }
-    }
+       // public static int Brojac { get => brojac; set => brojac = value; }
+              public static int Brojac
+        {
+            get; set; }
+        }
 }

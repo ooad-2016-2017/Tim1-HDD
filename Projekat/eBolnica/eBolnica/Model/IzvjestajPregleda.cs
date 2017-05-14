@@ -20,7 +20,7 @@ namespace eBolnica.Model {
             brojac++;
             this.id = brojac;
         }
-
-        public string Izvjestaj { get => izvjestaj; set => izvjestaj = value; }
+        public string Izvjestaj { get; set; }
+        //public string Izvjestaj { get => izvjestaj; set => izvjestaj = value; }
     }
 }
