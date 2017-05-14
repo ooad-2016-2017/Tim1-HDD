@@ -46,8 +46,8 @@ namespace eBolnica
               () =>
               {
                   newAppView = ApplicationView.GetForCurrentView();
-                  Window.Current.Content = new DoktorPage();
-                  //Window.Current.Content = new MyUserControl1();
+                  //Window.Current.Content = new DoktorPage();
+                  Window.Current.Content = new MyUserControl1();
                   Window.Current.Activate();
              
                  

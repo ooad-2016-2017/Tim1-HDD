@@ -105,33 +105,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame Name="MyFrame">
-                    <StackPanel >
-                        <StackPanel Margin="0,0,0,0"   BorderThickness="2" >
-                        <TextBlock FontSize="20" Text="Timetable" Margin="9,9,0,9"/>
-                            <ScrollViewer Height="150" BorderBrush="Black" BorderThickness="2">
-                                <Grid Height="150" >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="40"/>
-                             </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                    <RowDefinition Height="16"/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                    <TextBlock Text="OVDJE IDE TABELA KAD BUDEMO IMALI PODATKE" FontSize="9" />
-                                      </Grid>
-                            </ScrollViewer>
-                            <StackPanel BorderThickness="2" VerticalAlignment="Bottom"  >
-                                <TextBlock Text="Diagnosis" FontSize="20" Margin="9,9,0,9"/>
-                                <ScrollViewer>
-                                    <TextBlock FontSize="15" Text="rterwe"  />
-                                </ScrollViewer>
-                            </StackPanel>
-                        </StackPanel>
-                    </StackPanel>
-        
+            
                 </Frame>
             </SplitView.Content>
         </SplitView>

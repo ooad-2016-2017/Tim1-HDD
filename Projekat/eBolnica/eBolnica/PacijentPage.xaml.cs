@@ -26,7 +26,7 @@ namespace eBolnica
         public MyUserControl1()
         {
             this.InitializeComponent();
- 
+            MyFrame.Navigate(typeof(BlankPage1));
 
 
         }
