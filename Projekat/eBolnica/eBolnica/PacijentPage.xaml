@@ -54,7 +54,7 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" 
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Click="Appointments_Pacijent_Clicked"
 
                         Width="25" Height="30" Background="Transparent" FontSize="10" BorderThickness="0"/>
 

@@ -52,7 +52,7 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" 
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Click="Login_Clicked"
 
                         Width="50" Height="50" Background="Transparent" FontSize="10" BorderThickness="0"/>
 
@@ -93,11 +93,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame Name="Frame">
-                    <FlipView x:Name="flipView1">
-                        <Image Source="Assets/slika1.png" />
-                        <Image Source="Assets/slika2.png" />
-                        <Image Source="Assets/slika3.jpg" />
-                    </FlipView>
+                    
                 </Frame>
             </SplitView.Content>
         </SplitView>

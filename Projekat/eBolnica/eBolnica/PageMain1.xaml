@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="eBolnica.MainPagePage1"
+    x:Class="eBolnica.PageMain1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:eBolnica"
@@ -13,5 +13,6 @@
             <Image Source="Assets/slika2.png" />
             <Image Source="Assets/slika3.jpg" />
         </FlipView>
+
     </Grid>
 </Page>

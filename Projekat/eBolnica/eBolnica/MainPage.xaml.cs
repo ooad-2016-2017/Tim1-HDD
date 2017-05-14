@@ -30,6 +30,7 @@ namespace eBolnica
             this.InitializeComponent();
             OnCreate();
             this.SplitView.IsPaneOpen = true;
+            Frame.Navigate(typeof(PageMain1));
 
 
         }
@@ -46,8 +47,8 @@ namespace eBolnica
               () =>
               {
                   newAppView = ApplicationView.GetForCurrentView();
-                  //Window.Current.Content = new DoktorPage();
-                  Window.Current.Content = new MyUserControl1();
+                  Window.Current.Content = new DoktorPage();
+                  //Window.Current.Content = new MyUserControl1();
                   Window.Current.Activate();
              
                  
@@ -62,8 +63,13 @@ namespace eBolnica
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-           
+            Frame.Navigate(typeof(PageMain1));
         }
+        private void Login_Clicked(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PageMainLogin1));
+        }
+
         private void Button_Click_Pane(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             this.SplitView.IsPaneOpen = !this.SplitView.IsPaneOpen; //pane open or close

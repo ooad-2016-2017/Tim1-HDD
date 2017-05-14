@@ -26,22 +26,17 @@ namespace eBolnica
         public MyUserControl1()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(BlankPage1));
+            MyFrame.Navigate(typeof(PagePacijentAppointments));
 
 
         }
            private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            if (!MyFrame.Navigate(typeof(PacijentPage2))) {
-                if (!this.SplitView.IsPaneOpen)
-                {
-                    this.SplitView.IsPaneOpen = true;
-                }
-                else
-                {
-                    this.SplitView.IsPaneOpen = false;
-                }
-            }
+            MyFrame.Navigate(typeof(PagePacijentAppointments));
+        }
+        private void Appointments_Pacijent_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(PagePacijentAppointments));
         }
         private void Button_Click_Pane(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {

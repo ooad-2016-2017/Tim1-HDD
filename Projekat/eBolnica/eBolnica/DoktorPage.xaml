@@ -53,7 +53,7 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" 
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Click="Timetable_Clicked"
 
                         Width="25" Height="30" Background="Transparent" FontSize="10" BorderThickness="0"/>
 
@@ -63,7 +63,7 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets"
+                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Click="Doktor_Appointments_Clicked"
 
                         Width="25" Height="30" Background="Transparent"/>
 
@@ -72,7 +72,7 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" 
+                        <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" Click="Doktor_Patients_Clicked"
 
                         Width="25" Height="30" Background="Transparent"/>
 

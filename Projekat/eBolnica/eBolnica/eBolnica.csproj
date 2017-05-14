@@ -125,6 +125,24 @@
     <Compile Include="PacijentPage.xaml.cs">
       <DependentUpon>PacijentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageDoktorAppointments.xaml.cs">
+      <DependentUpon>PageDoktorAppointments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDoktorPacijenti.xaml.cs">
+      <DependentUpon>PageDoktorPacijenti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDoktorTimetable.xaml.cs">
+      <DependentUpon>PageDoktorTimetable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageMain1.xaml.cs">
+      <DependentUpon>PageMain1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageMainLogin1.xaml.cs">
+      <DependentUpon>PageMainLogin1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagePacijentAppointments.xaml.cs">
+      <DependentUpon>PagePacijentAppointments.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -165,39 +183,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DoktorPageAppointments.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DoktorPagePacijenti.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DoktorPageTimetable.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainPage1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainPagePage1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainPageLogin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PacijentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PacijentPageAppointments.xaml">
+    <Page Include="PageDoktorAppointments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDoktorPacijenti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDoktorTimetable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageMain1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageMainLogin1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagePacijentAppointments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

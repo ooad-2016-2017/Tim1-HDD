@@ -22,10 +22,23 @@ namespace eBolnica
         public DoktorPage()
         {
             this.InitializeComponent();
+            MyFrame2.Navigate(typeof(PageDoktorTimetable));
         }
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame2.Navigate(typeof(PageDoktorTimetable));
+        }
+        private void Timetable_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame2.Navigate(typeof(PageDoktorTimetable));
+        }
+        private void Doktor_Appointments_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame2.Navigate(typeof(PageDoktorAppointments));
+        }
+        private void Doktor_Patients_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame2.Navigate(typeof(PageDoktorPacijenti));
         }
         private void Button_Click_Pane(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
