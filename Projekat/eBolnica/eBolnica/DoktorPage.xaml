@@ -92,7 +92,7 @@
 
                         <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets"
 
-                        Width="25" Height="30" Background="Transparent"/>
+                        Width="25" Height="30" Background="Transparent" Click="Profile_Clicked" />
 
                         <TextBlock Text="Profile" FontSize="12" VerticalAlignment="Center" />
 

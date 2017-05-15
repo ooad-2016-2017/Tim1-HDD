@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="eBolnica.PageDoktorTimetable2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eBolnica"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Grid.Column="1" Margin="10">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row ="0" Text="Timetable" Foreground="Gray" FontSize="30" BorderBrush="Blue" />
+            <Grid Grid.Row="1"
+                    ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <RelativePanel Grid.Column="0" Margin="10">
+                    <StackPanel Name="StackTimetable1" MinHeight="300">
+                        <StackPanel Name="PanelTimetable1"  Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
+                                <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="250"/>
+                            </StackPanel>
+
+                        </StackPanel>
+                        <Grid RelativePanel.Below="PanelTimetable1" Name="Col1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Name"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
+                            <TextBlock Grid.Column="1" Text="Sex"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="2" Text="Age" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="3" Text="Country" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="4" Text="Diagnosys"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+
+                        </Grid>
+                        <Grid RelativePanel.Below="Col1" Name="Col2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="xxx"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
+                            <TextBlock Grid.Column="1" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="2" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="3" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                            <TextBlock Grid.Column="4" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel RelativePanel.Below="StackTimetable1" Name="StackTimetable2" RelativePanel.AlignRightWith="StackTimetable1" RelativePanel.AlignLeftWith="StackTimetable1">
+                        <ScrollViewer >
+                            <TextBox Height="150" Header="Details" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+                        </ScrollViewer>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  Name="StackTimetable3" RelativePanel.AlignRightWith="StackTimetable2" RelativePanel.AlignLeftWith="StackTimetable1" RelativePanel.AlignBottomWithPanel="True">
+                        <Button Name="confirm4" Content="Confirm" Margin="5,5,5,5"/>
+                        <Button Name="cancel4" Content="Cancel" Margin="5,5,5,5"/>
+
+                    </StackPanel>
+
+
+                </RelativePanel>
+                <StackPanel Grid.Column="1" Orientation="Vertical" Opacity="0.75" Margin="10">
+                    <StackPanel.Background>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                            <GradientStop Color="White" Offset="0.75"></GradientStop>
+                            <GradientStop Color="Black" Offset="1"></GradientStop>
+                        </LinearGradientBrush>
+                    </StackPanel.Background>
+                    <CalendarView />
+                    <CalendarDatePicker x:Name="arrivalCalendarDatePicker3" Header="Arrival date"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+            
+</Page>

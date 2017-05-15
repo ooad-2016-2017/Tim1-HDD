@@ -91,7 +91,7 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets"
+                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets" Click="Profile_Clicked"
 
                         Width="25" Height="30" Background="Transparent"/>
 

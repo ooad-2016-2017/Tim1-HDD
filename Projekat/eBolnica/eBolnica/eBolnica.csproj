@@ -122,6 +122,9 @@
     <Compile Include="Model\Pacijent.cs" />
     <Compile Include="Model\Pregled.cs" />
     <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="PacijentDashboard.xaml.cs">
+      <DependentUpon>PacijentDashboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PacijentPage.xaml.cs">
       <DependentUpon>PacijentPage.xaml</DependentUpon>
     </Compile>
@@ -133,6 +136,12 @@
     </Compile>
     <Compile Include="PageDoktorTimetable.xaml.cs">
       <DependentUpon>PageDoktorTimetable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDoktorTimetable2.xaml.cs">
+      <DependentUpon>PageDoktorTimetable2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageDoktorTimetable3.xaml.cs">
+      <DependentUpon>PageDoktorTimetable3.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageMain1.xaml.cs">
       <DependentUpon>PageMain1.xaml</DependentUpon>
@@ -187,6 +196,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PacijentDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PacijentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -200,6 +213,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageDoktorTimetable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDoktorTimetable2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageDoktorTimetable3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

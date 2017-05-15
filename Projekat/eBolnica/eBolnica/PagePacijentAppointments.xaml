@@ -8,32 +8,57 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel >
-            <StackPanel Margin="0,0,0,0"   BorderThickness="2" >
+        <RelativePanel>
+            <StackPanel Name="Stack1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="0,0,0,0"   BorderThickness="2" >
                 <TextBlock FontSize="20" Text="Timetable" Margin="9,9,0,9"/>
-                <ScrollViewer Height="150" BorderBrush="Black" BorderThickness="2">
-                    <Grid Height="150" >
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40"/>
-                            <ColumnDefinition Width="40"/>
-                            <ColumnDefinition Width="40"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="16"/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <TextBlock Text="OVDJE IDE TABELA KAD BUDEMO IMALI PODATKE" FontSize="9" />
-                    </Grid>
-                </ScrollViewer>
-                <StackPanel BorderThickness="2" VerticalAlignment="Bottom"  >
-                    <TextBlock Text="Diagnosis" FontSize="20" Margin="9,9,0,9"/>
-                    <ScrollViewer>
-                        <TextBlock FontSize="15" Text="rterwe"  />
-                    </ScrollViewer>
-                </StackPanel>
             </StackPanel>
-        </StackPanel>
+            <StackPanel Name="Stack2" RelativePanel.Below="Stack1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" MinHeight="150" MaxHeight="500" >
+                <Grid RelativePanel.Below="PanelTimetable1" Name="Col1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Control"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
+                    <TextBlock Grid.Column="1" Text="Date"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="2" Text="Time" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="3" Text="Status" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="4" Text="Diagnosys"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
 
+                </Grid>
+
+                <Grid RelativePanel.Below="Col1" Name="Col2"   ScrollViewer.HorizontalScrollMode="Enabled" 
+          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+          ScrollViewer.VerticalScrollMode="Disabled"
+          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="xxx"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
+                    <TextBlock Grid.Column="1" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="2" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="3" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="4" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel BorderThickness="2" VerticalAlignment="Bottom"  RelativePanel.Below="Stack2" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True"  >
+                <TextBlock Text="Informations" FontSize="20" Margin="9,9,0,9"/>
+                <ScrollViewer>
+                    <TextBox Name="textBoxDoktorInfo" Margin="5,5,5,5" MinHeight="200" />
+                </ScrollViewer>
+            </StackPanel>
+            <RelativePanel.Background>
+                <LinearGradientBrush StartPoint="1, 1" EndPoint="1, 0">
+                    <GradientStop Color="White" Offset="0.75"></GradientStop>
+                    <GradientStop Color="Black" Offset="0.000005"></GradientStop>
+                </LinearGradientBrush>
+            </RelativePanel.Background>
+        </RelativePanel>
     </Grid>
 </Page>

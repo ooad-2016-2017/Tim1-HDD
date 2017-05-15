@@ -26,13 +26,17 @@ namespace eBolnica
         public MyUserControl1()
         {
             this.InitializeComponent();
-            MyFrame.Navigate(typeof(PagePacijentAppointments));
+            MyFrame.Navigate(typeof(PageMain1));
 
 
         }
            private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(PagePacijentAppointments));
+            MyFrame.Navigate(typeof(PageMain1));
+        }
+        private void Profile_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(PacijentDashboard));
         }
         private void Appointments_Pacijent_Clicked(object sender, RoutedEventArgs e)
         {
