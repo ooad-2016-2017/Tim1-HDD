@@ -56,9 +56,3 @@ eBolnica™ je aplikacija čiji primarni zadatak je upravljati, olakšati i rast
   * **Apotekar** - izdaje lijekove
   * **Admin** - ima pristup i privilegiju promjene svih podataka o pacijentima i uposlenicima
   
-  
-
-#### To do list:
-- [X] Projektni zadatak 5
-- [ ] ...
-- [ ] PROFIT!
