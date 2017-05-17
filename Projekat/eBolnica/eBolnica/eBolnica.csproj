@@ -98,13 +98,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BlankPage1.xaml.cs">
+    <Compile Include="ViewModel\AdminViewModel.cs" />
+    <Compile Include="ViewModel\ApotekarViewModel.cs" />
+    <Compile Include="ViewModel\DoktorViewModel.cs" />
+    <Compile Include="ViewModel\DostavljacViewModel.cs" />
+    <Compile Include="ViewModel\MedicinskaSestraViewModel.cs" />
+    <Compile Include="ViewModel\PacijentViewModel.cs" />
+    <Compile Include="View\BlankPage1.xaml.cs">
       <DependentUpon>BlankPage1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DoktorPage.xaml.cs">
+    <Compile Include="View\DoktorPage.xaml.cs">
       <DependentUpon>DoktorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Administrator.cs" />
@@ -122,34 +128,34 @@
     <Compile Include="Model\Pacijent.cs" />
     <Compile Include="Model\Pregled.cs" />
     <Compile Include="Model\Uposlenik.cs" />
-    <Compile Include="PacijentDashboard.xaml.cs">
+    <Compile Include="View\PacijentDashboard.xaml.cs">
       <DependentUpon>PacijentDashboard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PacijentPage.xaml.cs">
+    <Compile Include="View\PacijentPage.xaml.cs">
       <DependentUpon>PacijentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDoktorAppointments.xaml.cs">
+    <Compile Include="View\PageDoktorAppointments.xaml.cs">
       <DependentUpon>PageDoktorAppointments.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDoktorPacijenti.xaml.cs">
+    <Compile Include="View\PageDoktorPacijenti.xaml.cs">
       <DependentUpon>PageDoktorPacijenti.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDoktorTimetable.xaml.cs">
+    <Compile Include="View\PageDoktorTimetable.xaml.cs">
       <DependentUpon>PageDoktorTimetable.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDoktorTimetable2.xaml.cs">
+    <Compile Include="View\PageDoktorTimetable2.xaml.cs">
       <DependentUpon>PageDoktorTimetable2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageDoktorTimetable3.xaml.cs">
+    <Compile Include="View\PageDoktorTimetable3.xaml.cs">
       <DependentUpon>PageDoktorTimetable3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageMain1.xaml.cs">
+    <Compile Include="View\PageMain1.xaml.cs">
       <DependentUpon>PageMain1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageMainLogin1.xaml.cs">
+    <Compile Include="View\PageMainLogin1.xaml.cs">
       <DependentUpon>PageMainLogin1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PagePacijentAppointments.xaml.cs">
+    <Compile Include="View\PagePacijentAppointments.xaml.cs">
       <DependentUpon>PagePacijentAppointments.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -184,55 +190,55 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BlankPage1.xaml">
+    <Page Include="View\BlankPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DoktorPage.xaml">
+    <Page Include="View\DoktorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PacijentDashboard.xaml">
+    <Page Include="View\PacijentDashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PacijentPage.xaml">
+    <Page Include="View\PacijentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDoktorAppointments.xaml">
+    <Page Include="View\PageDoktorAppointments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDoktorPacijenti.xaml">
+    <Page Include="View\PageDoktorPacijenti.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDoktorTimetable.xaml">
+    <Page Include="View\PageDoktorTimetable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDoktorTimetable2.xaml">
+    <Page Include="View\PageDoktorTimetable2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageDoktorTimetable3.xaml">
+    <Page Include="View\PageDoktorTimetable3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageMain1.xaml">
+    <Page Include="View\PageMain1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PageMainLogin1.xaml">
+    <Page Include="View\PageMainLogin1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PagePacijentAppointments.xaml">
+    <Page Include="View\PagePacijentAppointments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
