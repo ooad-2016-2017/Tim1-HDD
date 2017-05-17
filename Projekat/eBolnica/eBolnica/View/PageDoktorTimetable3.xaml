@@ -8,29 +8,29 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Pivot x:Name="rootPivot" Title="Pivot Title">
+        <Pivot x:Name="TimetablePivot" >
             <PivotItem Header="Today">
-                <Frame Name="PivotFrame1">
+                <Frame Name="TimetablePivot1">
                     
                 </Frame>
                 </PivotItem>
             <PivotItem Header="Tomrrow">
-                <Frame Name="PivotFrame2">
+                <Frame Name="TimetablePivot2">
 
                 </Frame>
             </PivotItem>
             <PivotItem Header="This week">
-                <Frame Name="PivotFrame3">
+                <Frame Name="TimetablePivot3">
 
                 </Frame>
             </PivotItem>
             <PivotItem Header="This month">
-                <Frame Name="PivotFrame4">
+                <Frame Name="TimetablePivot4">
 
                 </Frame>
             </PivotItem>
             <PivotItem Header="This year">
-                <Frame Name="PivotFrame5">
+                <Frame Name="TimetablePivot5">
 
                 </Frame>
             </PivotItem>

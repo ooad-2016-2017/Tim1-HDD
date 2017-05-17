@@ -20,9 +20,9 @@ namespace eBolnica
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PageDoktorTimetable : Page
+    public sealed partial class PacijentPerscriptions : Page
     {
-        public PageDoktorTimetable()
+        public PacijentPerscriptions()
         {
             this.InitializeComponent();
         }

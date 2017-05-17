@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel  >
             <StackPanel Name="Stack1">
-                <TextBox Grid.Row ="0" Text="Timetable" Foreground="Gray" Margin="10,10,0,0" FontSize="30" BorderBrush="Gray" />
+                <TextBlock Grid.Row ="0" Text="Profile" Foreground="Gray" Margin="10,10,0,0" FontSize="30"  />
                 <Image x:Name="image" Source="Assests/slika1.png" HorizontalAlignment="Left" Height="100" Margin="30,30,0,0" VerticalAlignment="Top" MinWidth="120" MaxWidth="300"/>
 
             </StackPanel>

@@ -8,22 +8,24 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
+       
+            <RelativePanel >
 
-            <StackPanel Margin="0,0,0,0" Height="200" Width="400" HorizontalAlignment="Left">
-                <TextBox Name="textBoxUsername" Header="Username:" Margin="9,9,9,9"/>
-                <TextBox Name="textBoxPassword" Header="Password:" Margin="9,9,9,9"/>
-                <Button Name="submitButton" Content="Submit" Margin="9,9,9,9"/>
+                <StackPanel Name="LoginPanel1" Margin="0,0,0,0" Height="200" Width="400" HorizontalAlignment="Left">
+                <TextBox Name="LoginUsername" Header="Username:" Margin="9,9,9,9"/>
+                <TextBox Name="LoginPassword" Header="Password:" Margin="9,9,9,9"/>
+                <Button Name="LoginSubmit" Content="Submit" Margin="9,9,9,9"/>
             </StackPanel>
 
-            <StackPanel Margin="0,0,0,0"  >
-                <FlipView x:Name="flipView1"  Height="500" >
+                <StackPanel  RelativePanel.Below="LoginPanel1" RelativePanel.AlignBottomWithPanel="True">
+                <FlipView x:Name="flipView1" MaxHeight="500" VerticalAlignment="Bottom">
                     <Image Source="Assets/slika1.png" />
                     <Image Source="Assets/slika2.png" />
                     <Image Source="Assets/slika3.jpg" />
                 </FlipView>
             </StackPanel>
-        </StackPanel>
+            </RelativePanel>
+       
 
     </Grid>
 </Page>

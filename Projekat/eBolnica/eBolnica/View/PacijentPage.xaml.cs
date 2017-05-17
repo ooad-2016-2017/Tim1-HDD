@@ -40,7 +40,11 @@ namespace eBolnica
         }
         private void Appointments_Pacijent_Clicked(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(PagePacijentAppointments));
+            MyFrame.Navigate(typeof(PageDoktorAppointments));
+        }
+        private void Perscriptions_Pacijent_Clicked(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(PacijentPerscriptions));
         }
         private void Button_Click_Pane(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {

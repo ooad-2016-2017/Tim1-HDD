@@ -9,12 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Grid.Column="1" Margin="10">
-            
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="9*"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBox Grid.Row ="0" Text="Timetable" Foreground="Gray" FontSize="30" BorderBrush="Blue" />
+            <TextBlock Grid.Row ="0" Text="Timetable" Foreground="Gray" FontSize="30"  />
             <Grid Grid.Row="1"
                     ScrollViewer.HorizontalScrollMode="Enabled" 
           ScrollViewer.HorizontalScrollBarVisibility="Auto"
@@ -29,8 +28,8 @@
                     <StackPanel Name="StackTimetable1" MinHeight="300">
                         <StackPanel Name="PanelTimetable1"  Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" >
-                                <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
-                                <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="250"/>
+                                <TextBlock Name="TimetableSearchLabel" TextWrapping="Wrap" Text="Search:" FontSize="20" Margin="0,0,50,0"/>
+                                <TextBox Name="TimetabeSearch"  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="250"/>
                             </StackPanel>
 
                         </StackPanel>
@@ -66,12 +65,12 @@
                     </StackPanel>
                     <StackPanel RelativePanel.Below="StackTimetable1" Name="StackTimetable2" RelativePanel.AlignRightWith="StackTimetable1" RelativePanel.AlignLeftWith="StackTimetable1">
                         <ScrollViewer >
-                            <TextBox Height="150" Header="Details" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+                            <TextBox Height="150" Name="TimetableDetails" Header="Details" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
                         </ScrollViewer>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal"  Name="StackTimetable3" RelativePanel.AlignRightWith="StackTimetable2" RelativePanel.AlignLeftWith="StackTimetable1" RelativePanel.AlignBottomWithPanel="True">
-                        <Button Name="confirm4" Content="Confirm" Margin="5,5,5,5"/>
-                        <Button Name="cancel4" Content="Cancel" Margin="5,5,5,5"/>
+                        <Button Name="TimetableConfirm" Content="Confirm" Margin="5,5,5,5"/>
+                        <Button Name="TimetableCancel" Content="Cancel" Margin="5,5,5,5"/>
 
                     </StackPanel>
 
@@ -84,8 +83,8 @@
                             <GradientStop Color="Black" Offset="1"></GradientStop>
                         </LinearGradientBrush>
                     </StackPanel.Background>
-                    <CalendarView />
-                    <CalendarDatePicker x:Name="arrivalCalendarDatePicker3" Header="Arrival date"/>
+                    <CalendarView Name="CalendarView"/>
+                    <CalendarDatePicker x:Name="CalendarPicker" Header="Pick date"/>
                 </StackPanel>
             </Grid>
         </Grid>

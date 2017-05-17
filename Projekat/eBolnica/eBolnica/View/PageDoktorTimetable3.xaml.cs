@@ -25,11 +25,11 @@ namespace eBolnica
         public PageDoktorTimetable3()
         {
             this.InitializeComponent();
-            PivotFrame1.Navigate(typeof(PageDoktorTimetable2));
-            PivotFrame2.Navigate(typeof(PageDoktorTimetable2));
-            PivotFrame3.Navigate(typeof(PageDoktorTimetable2));
-            PivotFrame4.Navigate(typeof(PageDoktorTimetable2));
-            PivotFrame5.Navigate(typeof(PageDoktorTimetable2));
+            TimetablePivot1.Navigate(typeof(PageDoktorTimetable2));
+            TimetablePivot2.Navigate(typeof(PageDoktorTimetable2));
+            TimetablePivot3.Navigate(typeof(PageDoktorTimetable2));
+            TimetablePivot4.Navigate(typeof(PageDoktorTimetable2));
+            TimetablePivot5.Navigate(typeof(PageDoktorTimetable2));
         }
     }
 }

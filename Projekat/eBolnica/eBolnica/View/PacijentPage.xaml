@@ -64,25 +64,17 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets"
+                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Click="Perscriptions_Pacijent_Clicked"
 
                         Width="25" Height="30" Background="Transparent"/>
 
                         <TextBlock Text="Perscriptions" FontSize="12" VerticalAlignment="Center" />
 
                     </StackPanel>
+                    
                     <StackPanel Orientation="Horizontal">
 
                         <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" 
-
-                        Width="25" Height="30" Background="Transparent"/>
-
-                        <TextBlock Text="Track health" FontSize="12" VerticalAlignment="Center" />
-
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton5" FontFamily="Segoe MDL2 Assets" 
 
                         Width="25" Height="30" Background="Transparent"/>
 
@@ -91,13 +83,20 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
 
-                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets" Click="Profile_Clicked"
+                        <Button x:Name="MenuButton5" FontFamily="Segoe MDL2 Assets" Click="Profile_Clicked"
 
                         Width="25" Height="30" Background="Transparent"/>
 
                         <TextBlock Text="Profile" FontSize="12" VerticalAlignment="Center" />
 
                     </StackPanel>
+                    <StackPanel>
+                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets" Click="Profile_Clicked"
+
+                        Width="25" Height="30" Background="Transparent"/>
+
+                  
+                </StackPanel>
 
 
                 </StackPanel>

@@ -36,303 +36,40 @@
             <SplitView.Pane>
 
                 <StackPanel Background="Gray">
-
-                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="HamburgerButton_Click"
-
-                    Width="25" Height="25" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Stretch" Padding="0" />
-
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="HamburgerButton_Click" Width="25" Height="25" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Stretch" Padding="0" />
                     <StackPanel Orientation="Horizontal" >
-
-                        <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" Click="Button1_Click"
-
-                    Width="25" Height="25" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"/>
-
-                        <TextBlock Text="Dashboard" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" />
-
+                        <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" Click="Button1_Click" Width="25" Height="25" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="10"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Click="Timetable_Clicked"
-
-                        Width="25" Height="30" Background="Transparent" FontSize="10" BorderThickness="0"/>
-
+                        <Button x:Name="MenuButton2" FontFamily="Segoe MDL2 Assets" Click="Doktor_Timetable_Clicked" Width="25" Height="30" Background="Transparent" FontSize="10" BorderThickness="0"/>
                         <TextBlock Text="Timetable" FontSize="12" VerticalAlignment="Center" />
-
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Click="Doktor_Appointments_Clicked"
-
-                        Width="25" Height="30" Background="Transparent"/>
-
+                        <Button x:Name="MenuButton3" FontFamily="Segoe MDL2 Assets" Click="Doktor_Appointments_Clicked" Width="25" Height="30" Background="Transparent"/>
                         <TextBlock Text="Appointments" FontSize="12" VerticalAlignment="Center" />
-
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" Click="Doktor_Patients_Clicked"
-
-                        Width="25" Height="30" Background="Transparent"/>
-
+                        <Button x:Name="MenuButton4" FontFamily="Segoe MDL2 Assets" Click="Doktor_Patients_Clicked" Width="25" Height="30" Background="Transparent"/>
                         <TextBlock Text="Patients" FontSize="12" VerticalAlignment="Center" />
-
                     </StackPanel>
+
                     <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton5" FontFamily="Segoe MDL2 Assets" 
-
-                        Width="25" Height="30" Background="Transparent"/>
-
+                        <Button x:Name="MenuButton5" FontFamily="Segoe MDL2 Assets"  Width="25" Height="30" Background="Transparent"/>
                         <TextBlock Text="Settings" FontSize="12" VerticalAlignment="Center" />
-
                     </StackPanel>
+
                     <StackPanel Orientation="Horizontal">
-
-                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets"
-
-                        Width="25" Height="30" Background="Transparent" Click="Profile_Clicked" />
-
+                        <Button x:Name="MenuButton6" FontFamily="Segoe MDL2 Assets" Width="25" Height="30" Background="Transparent" Click="Doktor_Profile_Clicked" />
                         <TextBlock Text="Profile" FontSize="12" VerticalAlignment="Center" />
-
                     </StackPanel>
-
 
                 </StackPanel>
 
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame Name="MyFrame2" >
-
-                    <Pivot x:Name="rootPivot" Title="Timetable">
-                        <PivotItem Header="Today">
-                            <StackPanel Orientation="Vertical" >
-                                <StackPanel x:Name="contentWrapper" Orientation="Horizontal">
-                                    <StackPanel x:Name="doelenContentPanel" Orientation="Vertical" MinWidth="200" Height="210">
-                                        <StackPanel x:Name="panel" Orientation="Horizontal" >
-                                            <TextBlock x:Name="search" TextWrapping="Wrap" Text="Search:     " Margin="5,5,5,5"/>
-                                            <TextBox x:Name="textboxt" TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="150" Margin="5,5,5,5"/>
-                                        </StackPanel>
-                                        <StackPanel x:Name="panell" >
-                                            <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                                                <ListView.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <ItemsWrapGrid/>
-                                                    </ItemsPanelTemplate>
-                                                </ListView.ItemsPanel>
-                                                <x:String>Item 1</x:String>
-                                                <x:String>Item 2</x:String>
-                                                <x:String>Item 3</x:String>
-                                                <x:String>Item 4</x:String>
-                                                <x:String>Item 5</x:String>
-                                            </ListView>
-                                        </StackPanel>
-                                    </StackPanel>
-                                    <StackPanel x:Name="secondPanel" Orientation="Vertical" HorizontalAlignment="Right" >
-                                        <CalendarView />
-                                        <CalendarDatePicker x:Name="arrivalCalendarDatePicker" Header="Arrival date"/>
-
-                                    </StackPanel>
-                                </StackPanel>
-                                <ScrollViewer >
-                                    <TextBox HorizontalAlignment="Stretch" Height="150" Header="Details"/>
-                                </ScrollViewer>
-                                <StackPanel Orientation="Horizontal" >
-                                    <Button Name="confirm" Content="Confirm" Margin="5,5,5,5"/>
-                                    <Button Name="cancel" Content="Cancel" Margin="5,5,5,5"/>
-
-                                </StackPanel>
-
-                            </StackPanel>
-
-                        </PivotItem>
-                        <PivotItem Header="Tomorow">
-                            <StackPanel Orientation="Vertical" >
-                                <StackPanel Orientation="Horizontal">
-                                    <StackPanel  Orientation="Vertical">
-                                        <StackPanel Orientation="Horizontal" >
-                                            <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
-                                            <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="150"/>
-                                        </StackPanel>
-                                        <StackPanel  >
-                                            <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                                                <ListView.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <ItemsWrapGrid/>
-                                                    </ItemsPanelTemplate>
-                                                </ListView.ItemsPanel>
-                                                <x:String>Item 1</x:String>
-                                                <x:String>Item 2</x:String>
-                                                <x:String>Item 3</x:String>
-                                                <x:String>Item 4</x:String>
-                                                <x:String>Item 5</x:String>
-                                            </ListView>
-                                        </StackPanel>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Vertical"  >
-                                        <CalendarView />
-                                        <CalendarDatePicker x:Name="arrivalCalendarDatePicker2" Header="Arrival date"/>
-
-                                    </StackPanel>
-                                </StackPanel>
-                                <ScrollViewer >
-                                    <TextBox HorizontalAlignment="Stretch" Height="150" Header="Details"/>
-                                </ScrollViewer>
-                                <StackPanel Orientation="Horizontal" >
-                                    <Button Name="confirm2" Content="Confirm" Margin="5,5,5,5"/>
-                                    <Button Name="cancel2" Content="Cancel" Margin="5,5,5,5"/>
-
-                                </StackPanel>
-
-                            </StackPanel>
-
-                        </PivotItem>
-                        <PivotItem Header="This week">
-                            <StackPanel Orientation="Vertical" >
-                                <StackPanel Orientation="Horizontal">
-                                    <StackPanel  Orientation="Vertical">
-                                        <StackPanel Orientation="Horizontal" >
-                                            <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
-                                            <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="150"/>
-                                        </StackPanel>
-                                        <StackPanel  >
-                                            <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                                                <ListView.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <ItemsWrapGrid/>
-                                                    </ItemsPanelTemplate>
-                                                </ListView.ItemsPanel>
-                                                <x:String>Item 1</x:String>
-                                                <x:String>Item 2</x:String>
-                                                <x:String>Item 3</x:String>
-                                                <x:String>Item 4</x:String>
-                                                <x:String>Item 5</x:String>
-                                            </ListView>
-                                        </StackPanel>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Vertical"  >
-                                        <CalendarView />
-                                        <CalendarDatePicker x:Name="arrivalCalendarDatePicker3" Header="Arrival date"/>
-
-                                    </StackPanel>
-                                </StackPanel>
-                                <ScrollViewer >
-                                    <TextBox HorizontalAlignment="Stretch" Height="150" Header="Details"/>
-                                </ScrollViewer>
-                                <StackPanel Orientation="Horizontal" >
-                                    <Button Name="confirm3" Content="Confirm" Margin="5,5,5,5"/>
-                                    <Button Name="cancel3" Content="Cancel" Margin="5,5,5,5"/>
-
-                                </StackPanel>
-
-                            </StackPanel>
-                        </PivotItem>
-                        <PivotItem Header="This month">
-                            <StackPanel Orientation="Vertical" >
-                                <StackPanel Orientation="Horizontal">
-                                    <StackPanel  Orientation="Vertical">
-                                        <StackPanel Orientation="Horizontal" >
-                                            <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
-                                            <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="150"/>
-                                        </StackPanel>
-                                        <StackPanel  >
-                                            <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                                                <ListView.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <ItemsWrapGrid/>
-                                                    </ItemsPanelTemplate>
-                                                </ListView.ItemsPanel>
-                                                <x:String>Item 1</x:String>
-                                                <x:String>Item 2</x:String>
-                                                <x:String>Item 3</x:String>
-                                                <x:String>Item 4</x:String>
-                                                <x:String>Item 5</x:String>
-                                            </ListView>
-                                        </StackPanel>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Vertical"  >
-                                        <CalendarView />
-                                        <CalendarDatePicker x:Name="arrivalCalendarDatePicker4" Header="Arrival date"/>
-
-                                    </StackPanel>
-                                </StackPanel>
-                                <ScrollViewer >
-                                    <TextBox HorizontalAlignment="Stretch" Height="150" Header="Details"/>
-                                </ScrollViewer>
-                                <StackPanel Orientation="Horizontal" >
-                                    <Button Name="confirm4" Content="Confirm" Margin="5,5,5,5"/>
-                                    <Button Name="cancel4" Content="Cancel" Margin="5,5,5,5"/>
-
-                                </StackPanel>
-
-                            </StackPanel>
-
-                        </PivotItem>
-                        <PivotItem Header="This year">
-                            <StackPanel Orientation="Vertical" >
-                                <StackPanel Orientation="Horizontal">
-                                    <StackPanel  Orientation="Vertical">
-                                        <StackPanel Orientation="Horizontal" >
-                                            <TextBlock  TextWrapping="Wrap" Text="Search:     "/>
-                                            <TextBox  TextWrapping="Wrap" Text="" HorizontalAlignment="Stretch" Width="150"/>
-                                        </StackPanel>
-                                        <StackPanel  >
-                                            <ListView Height="100"
-          ScrollViewer.HorizontalScrollMode="Enabled" 
-          ScrollViewer.HorizontalScrollBarVisibility="Auto"
-          ScrollViewer.VerticalScrollMode="Disabled"
-          ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                                                <ListView.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <ItemsWrapGrid/>
-                                                    </ItemsPanelTemplate>
-                                                </ListView.ItemsPanel>
-                                                <x:String>Item 1</x:String>
-                                                <x:String>Item 2</x:String>
-                                                <x:String>Item 3</x:String>
-                                                <x:String>Item 4</x:String>
-                                                <x:String>Item 5</x:String>
-                                            </ListView>
-                                        </StackPanel>
-                                    </StackPanel>
-                                    <StackPanel Orientation="Vertical"  >
-                                        <CalendarView />
-                                        <CalendarDatePicker x:Name="arrivalCalendarDatePicker5" Header="Arrival date"/>
-
-                                    </StackPanel>
-                                </StackPanel>
-                                <ScrollViewer >
-                                    <TextBox HorizontalAlignment="Stretch" Height="150" Header="Details"/>
-                                </ScrollViewer>
-                                <StackPanel Orientation="Horizontal" >
-                                    <Button Name="confirm5" Content="Confirm" Margin="5,5,5,5"/>
-                                    <Button Name="cancel5" Content="Cancel" Margin="5,5,5,5"/>
-
-                                </StackPanel>
-
-                            </StackPanel>
-
-                        </PivotItem>
-                    </Pivot>
-
-
+                <Frame Name="DoktorFrame" >
 
                 </Frame>
             </SplitView.Content>

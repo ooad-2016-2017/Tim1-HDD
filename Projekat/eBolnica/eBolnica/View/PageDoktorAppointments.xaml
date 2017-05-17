@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel>
             <StackPanel Name="Stack1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="0,0,0,0"   BorderThickness="2" >
-                <TextBlock FontSize="20" Text="Timetable" Margin="9,9,0,9"/>
+                <TextBlock FontSize="20" Text="Appointments" Margin="9,9,0,9"/>
             </StackPanel>
             <StackPanel Name="Stack2" RelativePanel.Below="Stack1" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True" MinHeight="150" MaxHeight="500" >
                 <Grid RelativePanel.Below="PanelTimetable1" Name="Col1">
@@ -34,24 +34,25 @@
           ScrollViewer.VerticalScrollMode="Disabled"
           ScrollViewer.VerticalScrollBarVisibility="Hidden">
                     <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Text="xxx"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
-                <TextBlock Grid.Column="1" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
-                <TextBlock Grid.Column="2" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
-                <TextBlock Grid.Column="3" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="xxx"  Width="130"  Opacity="0.9"  FontSize="20" Margin="10,10,5,10" ></TextBlock>
+                    <TextBlock Grid.Column="1" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="2" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
+                    <TextBlock Grid.Column="3" Text="xxx" Width="130"   VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
                     <TextBlock Grid.Column="4" Text="xxx"  Width="130"  VerticalAlignment="Stretch" Margin="5,10,10,10"  Opacity="0.9"  FontSize="20"></TextBlock>
                 </Grid>
-        </StackPanel>
+            </StackPanel>
             <StackPanel BorderThickness="2" VerticalAlignment="Bottom"  RelativePanel.Below="Stack2" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True"  >
-                <TextBlock Text="Informations" FontSize="20" Margin="9,9,0,9"/>
+                <TextBlock Name="AppointmentInformations" Text="Informations: " FontSize="20" Margin="9,9,0,9"/>
                 <ScrollViewer>
                     <TextBox Name="textBoxDoktorInfo" Margin="5,5,5,5" MinHeight="200" />
                 </ScrollViewer>
+                <Button Name="AppointmentUpdate" Content="Update" HorizontalAlignment="Right" Margin="20,10,20,20"/>
             </StackPanel>
             <RelativePanel.Background>
                 <LinearGradientBrush StartPoint="1, 1" EndPoint="1, 0">
