@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
+using eBolnica.v1.Model;
 
 namespace eBolnica.v1
 {
@@ -26,6 +27,21 @@ namespace eBolnica.v1
         public ICommand KrajRegistracije { get; set; }
         public static Pacijent pacijent { get; set; }
 
+
+        public String dadresa { get; set; }
+        public String dJMBG { get; set; }
+        public String demail { get; set; }
+        public String dIme { get; set; }
+        public String dPrezime { get; set; }
+        public DateTime dDatumRodjenja { get; set; }
+        public DateTimeOffset dDatumRodjenjaOffset { get; set; }
+        public String dKorisnickoIme { get; set; }
+        public String dLozinka { get; set; }
+        public String dLozinkaPotvrda { get; set; }
+        public ICommand RegistracijaKorisnika2 { get; set; }
+        public ICommand KrajRegistracije2 { get; set; }
+        public static Pacijent doktor { get; set; }
+
         private void NotifyPropertyChanged(String info)
         {
             if (PropertyChanged != null)
@@ -43,9 +59,18 @@ namespace eBolnica.v1
             rKorisnickoIme = "";
             rLozinka = "";
             //rEmail = "";
+            dIme = "";
+            dPrezime = "";
+            dKorisnickoIme = "";
+            dLozinka = "";
+            dadresa = "";
+            dJMBG = "";
+            demail = "";
 
-            RegistracijaKorisnika = new RelayCommand<object>(registracijaKorisnika);
+        RegistracijaKorisnika = new RelayCommand<object>(registracijaKorisnika);
             KrajRegistracije = new RelayCommand<object>(zavrsiRegistraciju);
+            RegistracijaKorisnika2 = new RelayCommand<object>(registracijaKorisnika2);
+            KrajRegistracije2 = new RelayCommand<object>(zavrsiRegistraciju2);
         }
 
 
@@ -82,6 +107,53 @@ namespace eBolnica.v1
                 Pacijent korisnik = new Pacijent(rDatumRodjenja.Year, rIme, rPrezime, rKorisnickoIme, rLozinka, rDatumRodjenja, "email");
                 DB.Pacijenti.Add(korisnik);
                 DB.SaveChanges();
+                Poruka = new MessageDialog("Uspješno kreiran račun.");
+                await Poruka.ShowAsync();
+            }
+        }
+
+        private async void registracijaKorisnika2(object parametar)
+        {
+            using (var DB = new AdminDB())
+            {
+                if (dIme.Length < 3 || dPrezime.Length < 3 || dKorisnickoIme.Length < 3 || dLozinka.Length < 3)
+                {
+                    Poruka = new MessageDialog("Unesite sve tražene podatke.");
+                    await Poruka.ShowAsync();
+                    return;
+                }
+
+
+                if (dLozinka != dLozinkaPotvrda)
+                {
+                    Poruka = new MessageDialog("Lozinke se ne podudaraju.");
+                    await Poruka.ShowAsync();
+                    return;
+                }
+                dDatumRodjenja = dDatumRodjenjaOffset.Date;
+
+
+            }
+        }
+
+        private async void zavrsiRegistraciju2(object parametar)
+        {
+            using (var DB = new AdminDB())
+            {
+
+
+                Doktor korisnik = new Doktor(dIme, dPrezime, dDatumRodjenja, dJMBG, dadresa, "brojTel", demail, 0, dKorisnickoIme, dLozinka);
+                DB.Doktori.Add(korisnik);
+                try
+                {
+                    DB.SaveChanges();
+                }
+                catch (Exception e)
+                {
+                    Poruka = new MessageDialog(e.ToString());
+                    await Poruka.ShowAsync();
+
+                }
                 Poruka = new MessageDialog("Uspješno kreiran račun.");
                 await Poruka.ShowAsync();
             }

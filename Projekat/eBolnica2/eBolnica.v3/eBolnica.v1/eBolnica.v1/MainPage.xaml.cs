@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -32,7 +33,14 @@ namespace eBolnica.v1
             this.InitializeComponent();
             OnCreate();
             this.SplitView.IsPaneOpen = true;
-           // Frame.Navigate(typeof(PacijentPerscriptions));
+            using (var db = new AdminDB())
+            {
+                // DefaultPodaci.Initialize(db);
+                db.Database.ApplyMigrations();
+                //DefaultPodaci.Initialize(db);
+
+            }
+            // Frame.Navigate(typeof(PacijentPerscriptions));
 
 
 

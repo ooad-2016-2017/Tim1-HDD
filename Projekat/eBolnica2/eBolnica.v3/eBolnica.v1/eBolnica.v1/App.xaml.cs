@@ -8,6 +8,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,6 +24,7 @@ namespace eBolnica.v1
     /// </summary>
     sealed partial class App : Application
     {
+        public MessageDialog Poruka { get; set; }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -31,10 +33,14 @@ namespace eBolnica.v1
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
             using (var db = new AdminDB())
             {
-                //DefaultPodaci.Initialize(db);
-               // db.Database.ApplyMigrations();
+                // DefaultPodaci.Initialize(db);
+                
+              db.Database.ApplyMigrations(); 
+               
+
                 //DefaultPodaci.Initialize(db);
 
             }

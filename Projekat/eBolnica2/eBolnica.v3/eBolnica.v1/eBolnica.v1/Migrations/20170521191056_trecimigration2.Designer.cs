@@ -7,9 +7,19 @@ using eBolnica.v1;
 namespace eBolnicav1Migrations
 {
     [ContextType(typeof(AdminDB))]
-    partial class AdminDBModelSnapshot : ModelSnapshot
+    partial class trecimigration2
     {
-        public override void BuildModel(ModelBuilder builder)
+        public override string Id
+        {
+            get { return "20170521191056_trecimigration2"; }
+        }
+
+        public override string ProductVersion
+        {
+            get { return "7.0.0-beta6-13815"; }
+        }
+
+        public override void BuildTargetModel(ModelBuilder builder)
         {
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");

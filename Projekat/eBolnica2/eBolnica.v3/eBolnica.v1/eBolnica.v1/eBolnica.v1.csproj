@@ -111,20 +111,30 @@
     <Compile Include="Migrations\20170520214603_drugiMigrate.designer.cs">
       <DependentUpon>20170520214603_drugiMigrate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170521181400_trecimigration.cs" />
+    <Compile Include="Migrations\20170521181400_trecimigration.designer.cs">
+      <DependentUpon>20170521181400_trecimigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170521184155_trecimigration1.cs" />
+    <Compile Include="Migrations\20170521184155_trecimigration1.designer.cs">
+      <DependentUpon>20170521184155_trecimigration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170521191056_trecimigration2.cs" />
+    <Compile Include="Migrations\20170521191056_trecimigration2.designer.cs">
+      <DependentUpon>20170521191056_trecimigration2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AdminDBModelSnapshot.cs" />
     <Compile Include="Model\Administrator.cs" />
     <Compile Include="Model\Apotekar.cs" />
     <Compile Include="Model\Bolnica.cs" />
-    <Compile Include="Model\Doktor.cs" />
+    <Compile Include="Doktor.cs" />
     <Compile Include="Model\Dostavljac.cs" />
     <Compile Include="Model\IzvjestajPregleda.cs" />
     <Compile Include="Model\LaboratorijskaAnaliza.cs" />
     <Compile Include="Model\Lijek.cs" />
     <Compile Include="Model\Odjel.cs" />
-    <Compile Include="Model\Osoba.cs" />
-    <Compile Include="Model\Pacijent.cs" />
     <Compile Include="Model\Pregled.cs" />
-    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Uposlenik.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Pacijent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

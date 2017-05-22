@@ -21,14 +21,16 @@
     </Page.Resources>
 
     <StackPanel Name="PodaciPanel" Orientation="Horizontal" Margin="0, 20, 0, 0" >
-        <StackPanel  Opacity="0.85" Padding="20, 20, 20, 20">
+          <StackPanel  Opacity="0.85" Padding="20, 20, 20, 20">
             <StackPanel.Background>
                 <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
                     <GradientStop Color="White" Offset="0.75"></GradientStop>
-                    <GradientStop Color="Blue" Offset="1"></GradientStop>
+                    <GradientStop Color="WhiteSmoke" Offset="1"></GradientStop>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBox Name="firstName" PlaceholderText="Ime" Style="{StaticResource LoginTextBox}" Text="{Binding rIme, Mode=TwoWay}" ></TextBox>
+
+           
+            <TextBox Name="firstName" Header="Registracija pacijenta:"  PlaceholderText="Ime" Style="{StaticResource LoginTextBox}" Text="{Binding rIme, Mode=TwoWay}" ></TextBox>
             <TextBox Name="lastName" PlaceholderText="Prezime" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding rPrezime, Mode=TwoWay}"></TextBox>
             <CalendarDatePicker Name="birthDate" PlaceholderText="Datum rodenja: " Margin="0,10,0,0" BorderBrush="Blue" Width="200" Date="{Binding rDatumRodjenjaOffset, Mode=TwoWay}"></CalendarDatePicker>
             <TextBox Name="jmbg" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Maticni broj"></TextBox>
@@ -47,8 +49,31 @@
             <Button Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 10, 0, 0" Background="Blue" Opacity="0.85" Foreground="White" Command="{Binding Path=KrajRegistracije}"></Button>
 
         </StackPanel>
-        <StackPanel>
-            <Frame Name="FrameRegistruj">
+        <StackPanel Margin="0,0,0,10">
+            <Frame Name="FrameRegistruj" >
+                <StackPanel>
+                    <TextBlock Name="labelDoktor" Text="Registracija doktora: " FontSize="30" Foreground="Gray" Margin="20,20,20,20" />
+                    <StackPanel Name="PodaciPanel1" Orientation="Horizontal" Margin="0, 20, 0, 0" >
+                        <StackPanel  Opacity="0.85" Padding="20, 20, 20, 20">
+                       
+                            <TextBox Name="firstName1" PlaceholderText="Ime" Style="{StaticResource LoginTextBox}" Text="{Binding dIme, Mode=TwoWay}" ></TextBox>
+                            <TextBox Name="lastName1" PlaceholderText="Prezime" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding dPrezime, Mode=TwoWay}"></TextBox>
+                            <CalendarDatePicker Name="birthDate1" PlaceholderText="Datum rodenja: " Margin="0,10,0,0" BorderBrush="Blue" Width="200" Date="{Binding dDatumRodjenjaOffset, Mode=TwoWay}"></CalendarDatePicker>
+                            <TextBox Name="jmbg1" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Maticni broj" Text="{Binding dJMBG, Mode=TwoWay}" ></TextBox>
+                            <TextBox Name="dadresa" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Adresa" Text="{Binding dadresa, Mode=TwoWay}" ></TextBox>
+                            <TextBox Name="demail" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Email" Text="{Binding demail, Mode=TwoWay}" ></TextBox>
+
+                        </StackPanel>
+                        <StackPanel Opacity="0.85" Padding="20, 20, 20, 20" Margin="10, 0, 0, 0">
+                            
+                            <TextBox x:Name ="userName1" PlaceholderText="Korisnicko ime" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding dKorisnickoIme, Mode=TwoWay}"/>
+                            <TextBox x:Name="password1" PlaceholderText="Lozinka" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding dLozinka, Mode=TwoWay}"/>
+                            <TextBox x:Name="_password1" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Potvrdi lozinku" Text="{Binding dLozinkaPotvrda, Mode=TwoWay}"/>
+                            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Registruj" Foreground="White" Background="Blue" Width="200" Margin="0, 10, 0, 0" Command="{Binding Path=RegistracijaKorisnika2}"></Button>
+                            <Button Content="Potvrdi" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 10, 0, 0" Background="Blue" Opacity="0.85" Foreground="White" Command="{Binding Path=KrajRegistracije2}"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                    </StackPanel>
 
             </Frame>
             <StackPanel.Background>
