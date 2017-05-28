@@ -7,13 +7,20 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
 using eBolnica.Model;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace eBolnica
+
+
 {
     class AdminViewModel2 : INotifyPropertyChanged
     {
         public MessageDialog Poruka { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
+
+        //za azure 
+        IMobileServiceTable<eBolnica.Migrations.DoktorTabela> userTableObj = App.MobileService.GetTable<eBolnica.Migrations.DoktorTabela>();
+        IMobileServiceTable<eBolnica.Migrations.PacijentTabela> userTableObjPacijent = App.MobileService.GetTable<eBolnica.Migrations.PacijentTabela>();
 
 
         public String rIme { get; set; }
@@ -80,7 +87,7 @@ namespace eBolnica
             {
                 if (rIme.Length < 3 || rPrezime.Length < 3 || rKorisnickoIme.Length < 3 || rLozinka.Length < 3)
                 {
-                    Poruka = new MessageDialog("Unesite sve tražene podatke.");
+                    Poruka = new MessageDialog("Unesite sve tražene podatke.(Nepravilan unos nekih polja)");
                     await Poruka.ShowAsync();
                     return;
                 }
@@ -106,9 +113,38 @@ namespace eBolnica
 
                 Pacijent korisnik = new Pacijent(rDatumRodjenja.Year, rIme, rPrezime, rKorisnickoIme, rLozinka, rDatumRodjenja, "email");
                 DB.Pacijenti.Add(korisnik);
-                DB.SaveChanges();
-                Poruka = new MessageDialog("Uspješno kreiran račun.");
-                await Poruka.ShowAsync();
+                try
+                {
+                    DB.SaveChanges();
+
+                    //Spasavanje na azure
+                    Migrations.PacijentTabela obj = new Migrations.PacijentTabela();
+
+
+                    obj.Ime = korisnik.Ime;
+                    obj.Prezime = korisnik.Prezime;
+                    obj.DatumRodjenja = korisnik.DatumRodjenja;
+                    obj.Jmbg = korisnik.Jmbg;
+                    obj.BrojTelefona = korisnik.BrojTelefona;
+                    obj.Username = korisnik.username;
+                    obj.Password = korisnik.password;
+                    obj.Email = korisnik.Email;
+                    obj.AdresaStanovanja = korisnik.AdresaStanovanja;
+                    obj.id = korisnik.id.ToString();
+                    obj.Prioritet = korisnik.Prioritet;
+
+                    userTableObjPacijent.InsertAsync(obj);
+
+                    Poruka = new MessageDialog("Uspješno kreiran račun.");
+                    await Poruka.ShowAsync();
+                }
+                catch(Exception e)
+                {
+                    Poruka = new MessageDialog(e.Message);
+                    await Poruka.ShowAsync();
+                }
+
+                
             }
         }
 
@@ -147,6 +183,24 @@ namespace eBolnica
                 try
                 {
                     DB.SaveChanges();
+
+                    //----------------------------------
+                    //pokusaj dodavanja u bazu na azure serveru 
+                    Migrations.DoktorTabela obj = new Migrations.DoktorTabela();
+                    obj.Ime = korisnik.Ime;
+                    obj.Prezime = korisnik.Prezime;
+                    obj.DatumRodjenja = korisnik.DatumRodjenja;
+                    obj.Jmbg = korisnik.Jmbg;
+                    obj.BrojTelefona = korisnik.BrojTelefona;
+                    obj.Username = korisnik.Username;
+                    obj.Password = korisnik.Password;
+                    obj.Plata = korisnik.Plata;
+                    obj.Email = korisnik.Email;
+                    obj.AdresaStanovanja = korisnik.AdresaStanovanja;
+                    obj.id = korisnik.Id.ToString();
+
+                    userTableObj.InsertAsync(obj); 
+                    //----------------------------------------
                 }
                 catch (Exception e)
                 {

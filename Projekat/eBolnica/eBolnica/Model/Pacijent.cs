@@ -11,9 +11,9 @@ namespace eBolnica
     public class Pacijent : Osoba, INotifyPropertyChanged
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private int id { get; set; }
-        private String username { get; set; }
-        private String password { get; set; }
+        public int id { get; set; }
+        public String username { get; set; }
+        public String password { get; set; }
         // List<Pregled> pregledi = new List<Pregled>();
         // List<Lijek> terapija = new List<Lijek>();
         private bool prioritet = false;
