@@ -95,6 +95,7 @@
     <Compile Include="AdminDB.cs" />
     <Compile Include="Migrations\DoktorTabela.cs" />
     <Compile Include="Migrations\PacijentTabela.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
     </Compile>

@@ -126,8 +126,8 @@ namespace eBolnica
                     obj.DatumRodjenja = korisnik.DatumRodjenja;
                     obj.Jmbg = korisnik.Jmbg;
                     obj.BrojTelefona = korisnik.BrojTelefona;
-                    obj.Username = korisnik.username;
-                    obj.Password = korisnik.password;
+                    obj.Username = korisnik.Username;
+                    obj.Password = korisnik.Password;
                     obj.Email = korisnik.Email;
                     obj.AdresaStanovanja = korisnik.AdresaStanovanja;
                     obj.id = korisnik.id.ToString();

@@ -15,7 +15,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices;
+using eBolnica.View;
+
 namespace eBolnica
 {
     /// <summary>
@@ -31,7 +33,8 @@ namespace eBolnica
         /// </summary>
         /// 
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("http://ebolnica.azurewebsites.net");
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://ebolnica.azurewebsites.net");
+
         public App()
         {
             this.InitializeComponent();

@@ -57,8 +57,8 @@ namespace eBolnica
               () =>
               {
                   newAppView = ApplicationView.GetForCurrentView();
-                  // Window.Current.Content = new DoktorPage();
-                  Window.Current.Content = new eBolnica.View.AdminView();
+                   Window.Current.Content = new eBolnica.View.PageMainLogin1();
+                  //Window.Current.Content = new eBolnica.View.AdminView();
                   Window.Current.Activate();
 
 

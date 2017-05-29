@@ -12,8 +12,8 @@ namespace eBolnica
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public String username { get; set; }
-        public String password { get; set; }
+        public String Username { get; set; }
+        public String Password { get; set; }
         // List<Pregled> pregledi = new List<Pregled>();
         // List<Lijek> terapija = new List<Lijek>();
         private bool prioritet = false;
@@ -31,8 +31,8 @@ namespace eBolnica
         {
             id = _id;
 
-            username = _korisnickoIme;
-            password = _lozinka;
+            Username = _korisnickoIme;
+            Password = _lozinka;
 
 
 

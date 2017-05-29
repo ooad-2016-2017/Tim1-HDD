@@ -12,9 +12,9 @@
         <RelativePanel >
 
             <StackPanel Name="LoginPanel1" Margin="0,0,0,0" Height="200" Width="400" HorizontalAlignment="Left">
-                <TextBox Name="LoginUsername" Header="Username:" Margin="9,9,9,9"/>
-                <TextBox Name="LoginPassword" Header="Password:" Margin="9,9,9,9"/>
-                <Button Name="LoginSubmit" Content="Submit" Margin="9,9,9,9"/>
+                <TextBox Name="LoginUsername" Header="Username:" Margin="9,9,49,9" Text="{x:Bind Login.Username}"/>
+                <TextBox Name="LoginPassword" Header="Password:" Margin="9,9,49,9" Text="{x:Bind Login.Password}"/>
+                <Button x:Name="LoginSubmit" Content="Submit" Margin="9,9,0,9" Command="{Binding Path = Ilogin}"/>
             </StackPanel>
 
             <StackPanel  RelativePanel.Below="LoginPanel1" RelativePanel.AlignBottomWithPanel="True">
