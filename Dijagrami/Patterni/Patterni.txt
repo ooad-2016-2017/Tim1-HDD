@@ -1,0 +1,54 @@
+Decorator pattern
+
+Decorator pattern koristi se za dinamičko dodavanje novih elemenata i funkcionalnosti postojecim objektima.
+Ovaj pattern iskoristićemo na klasi Pregled.
+Pacijent i doktor imaju isti "core" pregleda ali svaki ima jos neko dodatno "ruho" pregleda.
+
+
+Adapter
+
+Adapter pattern omogućava definiranje drugačijeg interfejsa za već postojeću klasu a da pri tome nema promjena na originalnoj klasi.
+Ovaj pattern idealno je Primjeniti na klasu Pacijent.
+Trenutno postoje 2 tipa pacijenata: obični i hitni. Oni implementiraju drugačije načine zakazivanja pregleda. Hitnim bivaju ponuđeni raniji termini od običnih pacijenata.
+Moguće je dodati još tipova pacijenata (tipa "HITAN!!!" naspram "hitan") i ovaj način implementacije korištenjem Adapter patterna nam to omogućava na pravi način.
+
+
+Prototype
+
+Prototype pattern omogućava kreiranje novih objekata klonirajući jednu od postojećih instanci u cilju smanjivanja broja klasa.
+Prototype pattern dozvoljava da se kreiraju objekti bez poznavanja njihove klase ili detalja kako je objekat kreiran.
+Ovaj pattern primjenićemo na klasu Osoba jer se oni daleko najviše koriste.
+
+
+Singleton
+
+U našem modelu postoje neke klase koje je potrebno i dovoljno instancirati jednom. 
+Primarno riječ je o klasi AdminViewModel Ukoliko ne bi upotrijebili ovaj pattern bilo bi više načina da se unesu i obrišu podaci korisnika što je neprihvatljivo. 
+Zbog toga je potrebno onemogućiti da se kreira više objekata ovih klasa.
+
+
+Facade pattern
+Facade pattern pravi poveznicu između korisničkih interfejsa i logičkog pogleda sistema.
+Za implementaciju ovog patterna, kreiramo klasu Facade koja objedinjava sve logičke dijelove sistema.
+ViewModeli predstavljaju logički dio sistema u našem slučaju, te je potrebno napraviti jednu klasu koja sadržava ViewModele i koja navigira njima.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
