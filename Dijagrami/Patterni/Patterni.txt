@@ -1,4 +1,4 @@
-Decorator pattern
+﻿Decorator pattern
 
 Decorator pattern koristi se za dinamičko dodavanje novih elemenata i funkcionalnosti postojecim objektima.
 Ovaj pattern iskoristićemo na klasi Pregled.
@@ -31,6 +31,15 @@ Facade pattern
 Facade pattern pravi poveznicu između korisničkih interfejsa i logičkog pogleda sistema.
 Za implementaciju ovog patterna, kreiramo klasu Facade koja objedinjava sve logičke dijelove sistema.
 ViewModeli predstavljaju logički dio sistema u našem slučaju, te je potrebno napraviti jednu klasu koja sadržava ViewModele i koja navigira njima.
+
+
+Bridge pattern
+Bridge pattern omogućava da pozivom Timetable-a, dobijamo različite preglede rasporeda ovisno o tome koji korisnik i nad kojom osobom ga poziva.
+Doktor će za svoj timetable vidjeti sve pacijente koje ima u redu čekanja, dok će pacijent kada otvori timetable doktora vidjeti samo svoje termine koji su već zakazani.
+
+Proxy pattern
+Proxy pattern omogućava da apotekar nema uvid u čitavog pacijenta, nego preko proxy objekta on zapravo ima uvid samo nad onim aspektima i dijelovima pacijenta koji njega zanimaju
+i ništa više od toga.
 
 
 
