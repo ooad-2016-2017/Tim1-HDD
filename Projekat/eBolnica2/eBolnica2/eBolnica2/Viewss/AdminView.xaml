@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="eBolnica2.Viewss.AdminView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:eBolnica2.Viewss"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="TextBox" x:Key="LoginTextBox">
+            <Setter Property="Width" Value="200"></Setter>
+            <Setter Property="BorderBrush" Value="Blue"></Setter>
+        </Style>
+        <Style TargetType="TextBox" x:Key="_LoginTextBox">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="BorderBrush" Value="Blue"></Setter>
+        </Style>
+        <FontFamily x:Key="TitleFont">/Assets/Gabriola-Regular.ttf #GABRIOLA</FontFamily>
+
+    </Page.Resources>
+
+    <StackPanel Name="PodaciPanel" Orientation="Horizontal" Margin="0, 20, 0, 0" >
+        <StackPanel  Opacity="0.85" Padding="20, 20, 20, 20">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                    <GradientStop Color="White" Offset="0.75"></GradientStop>
+                    <GradientStop Color="WhiteSmoke" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            
+            <TextBox Name="firstName" Header="Registracija:"  PlaceholderText="Ime" Style="{StaticResource LoginTextBox}" Text="{Binding rIme, Mode=TwoWay}" ></TextBox>
+            
+            <TextBox Name="lastName" PlaceholderText="Prezime" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding rPrezime, Mode=TwoWay}"></TextBox>
+            <CalendarDatePicker Name="birthDate" PlaceholderText="Datum rodenja: " Margin="0,10,0,0" BorderBrush="Blue" Width="200" Date="{Binding rDatumRodjenjaOffset, Mode=TwoWay}"></CalendarDatePicker>
+            <TextBox Name="jmbg" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Maticni broj" Text="{Binding rJmbg,Mode=TwoWay}"></TextBox>
+            <TextBox Name="email" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="eMail" Text="{Binding rEmail,Mode=TwoWay}"></TextBox>
+            <TextBox Name="adresaStanovanja" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Adresa stanovanja" Text="{Binding rAdresa,Mode=TwoWay}"></TextBox>
+            <TextBox Name="tBroj" Margin="0, 10, 0, 0" Style="{StaticResource LoginTextBox}" PlaceholderText="Telefonski broj" Text="{Binding tBroj,Mode=TwoWay}"></TextBox>
+
+            <CheckBox Name="odabir" Margin="0,10,0,0" IsChecked="{Binding registracijaDoktora}">Doktor(check)/Pacijent(uncheck)</CheckBox>
+
+        </StackPanel>
+        <StackPanel Opacity="0.85" Padding="20, 20, 20, 20" Margin="10, 0, 0, 0">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                    <GradientStop Color="White" Offset="0.75"/>
+                    <GradientStop Color="Blue" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBox x:Name ="userName" PlaceholderText="Korisnicko ime" Margin="0, 10,0,0" Style="{StaticResource LoginTextBox}" Text="{Binding rKorisnickoIme, Mode=TwoWay}"/>
+            <PasswordBox x:Name="password" PlaceholderText="Lozinka" Margin="0, 10,0,0"  Password="{Binding rLozinka, Mode=TwoWay}"/>
+            <PasswordBox x:Name="_password" Margin="0, 10, 0, 0" PlaceholderText="Potvrdi lozinku" Password="{Binding rLozinkaPotvrda, Mode=TwoWay}"/>
+            <Button Content="Registruj" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 10, 0, 0" Background="Blue" Opacity="0.85" Foreground="White" Command="{Binding KrajRegistracije}"/>
+            <Button Name="neko" Command="{Binding backEvent,Mode=TwoWay}" Content="Back"/>
+        </StackPanel>
+
+        
+
+    </StackPanel>
+</Page>
